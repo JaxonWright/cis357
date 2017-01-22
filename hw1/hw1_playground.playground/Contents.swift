@@ -54,11 +54,24 @@ for i in 1...10 {
 }
 
 //Problem 9
-/*for var i=10; i > 0; i -= 1 {
+// print("Problem 9")
+for i in(1...10).reversed(){
     print(i)
-}*/
+}
+
+for i in stride(from: 10, to: 1, by: -1) { print(i) }
+
+
 
 //Problem 10
+var x = 4
+var y = 2
+var product = 0
+for _ in 1...y{
+    product +=  x
+}
+print("\(x) times \(y) is \(product)")
+
 
 
 //Problem 11
@@ -103,10 +116,35 @@ switch (count) {
 }
 
 //Problem 14
+func verbalizeNumber (integer: Int) -> String {
+    var strOut: String
+    switch (integer) {
+    case 0:
+        strOut = "none"
+    case 1...3:
+        strOut = "a few"
+    case 4...9:
+        strOut = "several"
+    case 10...99:
+        strOut = "tens of"
+    case 100...999:
+        strOut = "hundreds of"
+    case 1000...999999:
+        strOut = "thousands of"
+    default:
+        strOut = "millions of"
+    }
+    return strOut
+}
+print(verbalizeNumber(integer: 10))
 
 //Problem 15
+// not sure, maybe use sequences?
 
 //Problem 16
+func verbalizeAndShout (integer: Int) -> String { return verbalizeNumber(integer: integer).uppercased() }
+
+print(verbalizeAndShout(integer: 10))
 
 //Problem 17
 
