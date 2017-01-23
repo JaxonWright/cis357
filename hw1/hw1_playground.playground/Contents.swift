@@ -10,6 +10,7 @@ let intConst1 = 0xB //11
 let intConst2 = 0b1010 //10
 
 //Problem 2
+let const2 = "\(myString) \(3.1456546e12 * 4.65e10)"
 
 //Problem 3
 var jobsArray = ["queen", "worker", "drone"]
@@ -58,10 +59,7 @@ for i in 1...10 {
 for i in(1...10).reversed(){
     print(i)
 }
-
 for i in stride(from: 10, to: 1, by: -1) { print(i) }
-
-
 
 //Problem 10
 var x = 4
@@ -71,8 +69,6 @@ for _ in 1...y{
     product +=  x
 }
 print("\(x) times \(y) is \(product)")
-
-
 
 //Problem 11
 var i = 1
@@ -136,31 +132,53 @@ func verbalizeNumber (integer: Int) -> String {
     }
     return strOut
 }
-print(verbalizeNumber(integer: 10))
+//print(verbalizeNumber(integer: 10))
 
 //Problem 15 
 // using repeat because c-style for loops are gone
 var index = 1
 repeat {
-    print(index)
+    print(verbalizeNumber(integer: index))
     index *= 10
 } while(index < 100000000)
 
-
-
 //Problem 16
 func verbalizeAndShout (integer: Int) -> String { return verbalizeNumber(integer: integer).uppercased() }
-
-print(verbalizeAndShout(integer: 10))
+//print(verbalizeAndShout(integer: 10))
 
 //Problem 17
+func expressNumbersElegantly(max: Int, verbalizeFunction: (Int) -> String) -> String {
+    var index = 1
+    var strOut: String = ""
+    //var callFunc: (Int) -> String = verbalizeAndShout(integer: <#T##Int#>)
+    repeat {
+        strOut += verbalizeFunction(index)
+        index *= 10
+    } while (index < max)
+    return strOut
+}
 
 //Problem 18
+func expressNumbersVeryElegantly(highestNum max: Int, verbalize verbalizeFunction: (Int) -> String) -> String {
+    var index = 1
+    var strOut: String = ""
+    //var callFunc: (Int) -> String = verbalizeAndShout(integer: <#T##Int#>)
+    repeat {
+        strOut += verbalizeFunction(index)
+        index *= 10
+    } while (index < max)
+    return strOut
+}
 
 //Problem 19
-var famousLastWords = ["the cow jumped over the moon.", "three score and four years ago", "lets nuc 'em Joe!", "ah, there is just something about Swift"]
-
-
-
+var famousLastWords = ["the cow jumped over the moon.",
+                       "three score and four years ago",
+                       "lets nuc 'em Joe!",
+                       "ah, there is just something about Swift"]
+famousLastWords = famousLastWords.map {
+   String($0[$0.startIndex]).uppercased() + $0[$0.index(after: $0.startIndex)..<$0.endIndex]
+}
+//print(famousLastWords)
 
 //Problem 20
+
