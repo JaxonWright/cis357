@@ -138,8 +138,15 @@ func verbalizeNumber (integer: Int) -> String {
 }
 print(verbalizeNumber(integer: 10))
 
-//Problem 15
-// not sure, maybe use sequences?
+//Problem 15 
+// using repeat because c-style for loops are gone
+var index = 1
+repeat {
+    print(index)
+    index *= 10
+} while(index < 100000000)
+
+
 
 //Problem 16
 func verbalizeAndShout (integer: Int) -> String { return verbalizeNumber(integer: integer).uppercased() }
@@ -151,5 +158,9 @@ print(verbalizeAndShout(integer: 10))
 //Problem 18
 
 //Problem 19
+var famousLastWords = ["the cow jumped over the moon.", "three score and four years ago", "lets nuc 'em Joe!", "ah, there is just something about Swift"]
+
+
+
 
 //Problem 20
