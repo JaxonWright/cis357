@@ -9,14 +9,17 @@ var shouldBe = true
 let intConst1 = 0xB //11
 let intConst2 = 0b1010 //10
 
+
 //Problem 2
 let const2 = "\(myString) \(3.1456546e12 * 4.65e10)"
+
 
 //Problem 3
 var jobsArray = ["queen", "worker", "drone"]
 print(jobsArray[0])
 jobsArray.append("honey")
 jobsArray += ["are", "us"]
+
 
 //Problem 4
 for a in jobsArray {
@@ -25,6 +28,7 @@ for a in jobsArray {
 for (i, a) in jobsArray.enumerated() {
     print("Item #\(i) is \(a)")
 }
+
 
 //Problem 5
 var dict: [String:Float] = [
@@ -35,6 +39,7 @@ var dict: [String:Float] = [
     "Jon Krakaur": 6.1
 ]
 
+
 //Problem 6
 print(dict["John Steinbeck"]!)
 dict["Erik Larson"] = 9.2
@@ -42,24 +47,28 @@ if dict["Jon Krakaur"]! > dict["Mark Twain"]! {
     print("Jon Krakaur")
 } else {
     print("Mark Twain")
+
 }
+
 
 //Problem 7
 for (k,v) in dict {
     print("\(k): \(v)")
 }
 
+
 //Problem 8
 for i in 1...10 {
     print(i)
 }
 
+
 //Problem 9
-// print("Problem 9")
 for i in(1...10).reversed(){
     print(i)
 }
 for i in stride(from: 10, to: 1, by: -1) { print(i) }
+
 
 //Problem 10
 var x = 4
@@ -69,6 +78,7 @@ for _ in 1...y{
     product +=  x
 }
 print("\(x) times \(y) is \(product)")
+
 
 //Problem 11
 var i = 1
@@ -81,6 +91,7 @@ while (i < dict.count) {
 }
 avg = tot/Double(dict.count)
 
+
 //Problem 12
 if avg < 5.0 {
     print("Low")
@@ -89,6 +100,7 @@ if avg < 5.0 {
 } else if avg >= 7 {
     print("High")
 }
+
 
 //Problem 13
 var count:Int = 5
@@ -110,6 +122,7 @@ switch (count) {
         strOut = "millions of"
     
 }
+
 
 //Problem 14
 func verbalizeNumber (integer: Int) -> String {
@@ -134,41 +147,46 @@ func verbalizeNumber (integer: Int) -> String {
 }
 //print(verbalizeNumber(integer: 10))
 
-//Problem 15 
-// using repeat because c-style for loops are gone
-var index = 1
-repeat {
-    print(verbalizeNumber(integer: index))
-    index *= 10
-} while(index < 100000000)
+
+//Problem 15
+for i in stride(from: 1, to: 100_000_000, by: 10) {
+    print("\(i) is \(verbalizeNumber(integer: i)) something")
+}
+
 
 //Problem 16
-func verbalizeAndShout (integer: Int) -> String { return verbalizeNumber(integer: integer).uppercased() }
+func verbalizeAndShout (integer: Int) -> String {
+    return verbalizeNumber(integer: integer).uppercased()
+}
 //print(verbalizeAndShout(integer: 10))
+
 
 //Problem 17
 func expressNumbersElegantly(max: Int, verbalizeFunction: (Int) -> String) -> String {
-    var index = 1
     var strOut: String = ""
-    //var callFunc: (Int) -> String = verbalizeAndShout(integer: <#T##Int#>)
-    repeat {
-        strOut += verbalizeFunction(index)
-        index *= 10
-    } while (index < max)
+    for i in stride(from: 1, to: max, by: 10) {
+        strOut += verbalizeFunction(i)
+    }
     return strOut
 }
 
+var functionVar: (Int) -> String
+functionVar = verbalizeNumber
+expressNumbersElegantly(max: 10000000, verbalizeFunction: functionVar)
+
+functionVar = verbalizeAndShout
+expressNumbersElegantly(max: 10000000, verbalizeFunction: functionVar)
+
+
 //Problem 18
 func expressNumbersVeryElegantly(highestNum max: Int, verbalize verbalizeFunction: (Int) -> String) -> String {
-    var index = 1
     var strOut: String = ""
-    //var callFunc: (Int) -> String = verbalizeAndShout(integer: <#T##Int#>)
-    repeat {
-        strOut += verbalizeFunction(index)
-        index *= 10
-    } while (index < max)
+    for i in stride(from: 1, to: max, by: 10) {
+        strOut += verbalizeFunction(i)
+    }
     return strOut
 }
+
 
 //Problem 19
 var famousLastWords = ["the cow jumped over the moon.",
@@ -178,7 +196,7 @@ var famousLastWords = ["the cow jumped over the moon.",
 famousLastWords = famousLastWords.map {
    String($0[$0.startIndex]).uppercased() + $0[$0.index(after: $0.startIndex)..<$0.endIndex]
 }
-//print(famousLastWords)
+
 
 //Problem 20
 
