@@ -214,8 +214,8 @@ func letterToNumber(letter l:String) -> String {
         default: return l
     }
 }
-var testPhoneNum:String = "1 (800) FLOWERS"
-func convertPhoneToAllNums(phoneNum n:String, mappingFunc m: (String) -> String) -> String {
+var test📱:String = "1 (800) FLOWERS"
+func 📱toNums(phoneNum n:String, mappingFunc m: (String) -> String) -> String {
     var strOut: String = ""
     for c in n.characters {
         strOut += m(String(c))
@@ -226,5 +226,6 @@ func convertPhoneToAllNums(phoneNum n:String, mappingFunc m: (String) -> String)
     }
     return strOut
 }
-print(convertPhoneToAllNums(phoneNum: testPhoneNum, mappingFunc: letterToNumber))
+print(test📱)
+print(📱toNums(phoneNum: test📱, mappingFunc: letterToNumber))
 
