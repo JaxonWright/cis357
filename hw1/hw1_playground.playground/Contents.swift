@@ -128,20 +128,20 @@ switch (count) {
 func verbalizeNumber (integer: Int) -> String {
     var strOut: String
     switch (integer) {
-    case 0:
-        strOut = "none"
-    case 1...3:
-        strOut = "a few"
-    case 4...9:
-        strOut = "several"
-    case 10...99:
-        strOut = "tens of"
-    case 100...999:
-        strOut = "hundreds of"
-    case 1000...999999:
-        strOut = "thousands of"
-    default:
-        strOut = "millions of"
+        case 0:
+            strOut = "none"
+        case 1...3:
+            strOut = "a few"
+        case 4...9:
+            strOut = "several"
+        case 10...99:
+            strOut = "tens of"
+        case 100...999:
+            strOut = "hundreds of"
+        case 1000...999999:
+            strOut = "thousands of"
+        default:
+            strOut = "millions of"
     }
     return strOut
 }
@@ -149,10 +149,10 @@ func verbalizeNumber (integer: Int) -> String {
 
 
 //Problem 15
-for i in stride(from: 1, to: 100_000_000, by: 10) {
-    print("\(i) is \(verbalizeNumber(integer: i)) something")
-}
-
+//commented out becuase it takes a while
+/*for i in stride(from: 1, to: 100_000_000, by: 10) {
+ print("\(i) is \(verbalizeNumber(integer: i)) something")
+ }*/
 
 //Problem 16
 func verbalizeAndShout (integer: Int) -> String {
@@ -172,10 +172,10 @@ func expressNumbersElegantly(max: Int, verbalizeFunction: (Int) -> String) -> St
 
 var functionVar: (Int) -> String
 functionVar = verbalizeNumber
-expressNumbersElegantly(max: 10000000, verbalizeFunction: functionVar)
+//print(expressNumbersElegantly(max: 100, verbalizeFunction: functionVar))
 
 functionVar = verbalizeAndShout
-expressNumbersElegantly(max: 10000000, verbalizeFunction: functionVar)
+//print(expressNumbersElegantly(max: 100, verbalizeFunction: functionVar))
 
 
 //Problem 18
@@ -199,4 +199,32 @@ famousLastWords = famousLastWords.map {
 
 
 //Problem 20
+//convert phone numbers to raw numbers. 
+//useful when there are letters in the phone number and you don't know what to dial
+func letterToNumber(letter l:String) -> String {
+    switch (l.lowercased()) {
+        case "a"..."c": return "2"
+        case "d"..."f": return "3"
+        case "g"..."i": return "4"
+        case "j"..."l": return "5"
+        case "m"..."o": return "6"
+        case "p"..."s": return "7"
+        case "t"..."v": return "8"
+        case "w"..."z": return "9"
+        default: return l
+    }
+}
+var testPhoneNum:String = "1 (800) FLOWERS"
+func convertPhoneToAllNums(phoneNum n:String, mappingFunc m: (String) -> String) -> String {
+    var strOut: String = ""
+    for c in n.characters {
+        strOut += m(String(c))
+    }
+    //insert - in right spot if is not present
+    if(strOut[strOut.index(strOut.endIndex, offsetBy: -4)] != "-") {
+        strOut.insert("-" as Character, at: strOut.index(strOut.endIndex, offsetBy: -4))
+    }
+    return strOut
+}
+print(convertPhoneToAllNums(phoneNum: testPhoneNum, mappingFunc: letterToNumber))
 
