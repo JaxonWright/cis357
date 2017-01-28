@@ -54,9 +54,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
-                                    <action selector="handleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7a-Mc-SzJ"/>
-                                    <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdL-FR-aeU"/>
-                                    <action selector="handleButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3hK-SZ-STv"/>
+                                    <action selector="handleButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNj-s0-x2v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-Og-Fo9">
@@ -64,18 +62,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
-                                    <action selector="handleButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOb-EW-XtF"/>
+                                    <action selector="handleButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iwj-wP-EvZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcq-Yp-wiN">
-                                <rect key="frame" x="16" y="168" width="161" height="21"/>
+                                <rect key="frame" x="16" y="168" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bearing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZq-yw-kUY">
-                                <rect key="frame" x="16" y="203" width="161" height="21"/>
+                                <rect key="frame" x="16" y="203" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -95,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="128"/>
+            <point key="canvasLocation" x="132" y="127.28635682158921"/>
         </scene>
     </scenes>
 </document>

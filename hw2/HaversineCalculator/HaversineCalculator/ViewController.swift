@@ -56,6 +56,10 @@ class ViewController: UIViewController {
     func clearAll() {
         distanceLabel.text = "Distance: "
         bearingLabel.text = "Bearing: "
+        latitudeP1.text = ""
+        latitudeP2.text = ""
+        longitudeP1.text = ""
+        longitudeP2.text = ""
     }
 
 }
