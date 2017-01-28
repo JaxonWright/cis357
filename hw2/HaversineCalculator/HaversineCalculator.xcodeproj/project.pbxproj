@@ -12,6 +12,8 @@
 		446ADB761E398DBC005E9772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB741E398DBC005E9772 /* Main.storyboard */; };
 		446ADB781E398DBC005E9772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB771E398DBC005E9772 /* Assets.xcassets */; };
 		446ADB7B1E398DBC005E9772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB791E398DBC005E9772 /* LaunchScreen.storyboard */; };
+		825CD9861E3D550F002FCFCE /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CD9851E3D550F002FCFCE /* DecimalMinusTextField.swift */; };
+		825CD9881E3D55A9002FCFCE /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		446ADB771E398DBC005E9772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		446ADB7A1E398DBC005E9772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		446ADB7C1E398DBC005E9772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		825CD9851E3D550F002FCFCE /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
+		825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				446ADB771E398DBC005E9772 /* Assets.xcassets */,
 				446ADB791E398DBC005E9772 /* LaunchScreen.storyboard */,
 				446ADB7C1E398DBC005E9772 /* Info.plist */,
+				825CD9851E3D550F002FCFCE /* DecimalMinusTextField.swift */,
+				825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */,
 			);
 			path = HaversineCalculator;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825CD9861E3D550F002FCFCE /* DecimalMinusTextField.swift in Sources */,
+				825CD9881E3D55A9002FCFCE /* CLLocationExtensions.swift in Sources */,
 				446ADB731E398DBC005E9772 /* ViewController.swift in Sources */,
 				446ADB711E398DBC005E9772 /* AppDelegate.swift in Sources */,
 			);
@@ -300,6 +308,7 @@
 				446ADB811E398DBC005E9772 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

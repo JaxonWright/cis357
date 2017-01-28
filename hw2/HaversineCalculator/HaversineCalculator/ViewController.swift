@@ -37,7 +37,7 @@ class ViewController: UIViewController {
                 let c2 = CLLocation(latitude: Double(latitudeP2.text!)!, longitude: Double(longitudeP2.text!)!)
                 
                 distanceLabel.text?.append(" \(calcDistance(loc1: c1, loc2: c2)) kilometers")
-                bearingLabel.text?.append(" \(calcBearing(loc1: c1, loc2: c2)) degrees")
+                bearingLabel.text?.append(" \(c1.bearingToPoint(point: c2)) degrees")
             case "Clear":
                 clearAll()
             default:
@@ -52,25 +52,6 @@ class ViewController: UIViewController {
         let distanceInKilometers = distanceInMeters / 1000
         return distanceInKilometers
     }
-    
-    func calcBearing(loc1: CLLocation, loc2: CLLocation) -> Double {
-        let lat1 = degToRad(degrees: loc1.coordinate.latitude)
-        let lon1 = degToRad(degrees: loc1.coordinate.longitude)
-        
-        let lat2 = degToRad(degrees: loc2.coordinate.latitude)
-        let lon2 = degToRad(degrees: loc2.coordinate.longitude)
-        
-        let dLon = lon2 - lon1
-        
-        let y = sin(dLon) * cos(lat2)
-        let x = cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(dLon)
-        let radiansBearing = atan2(y, x)
-        
-        return radToDeg(radians: radiansBearing)
-    }
-    
-    func degToRad(degrees: Double) -> Double { return degrees * M_PI / 180.0 }
-    func radToDeg(radians: Double) -> Double { return radians * 180.0 / M_PI }
     
     func clearAll() {
         distanceLabel.text = "Distance: "
