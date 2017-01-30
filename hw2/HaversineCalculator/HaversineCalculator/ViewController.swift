@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  HaversineCalculator
 //
-//  Created by Kent Sinclair on 1/25/17.
+//  by Kent Sinclair and Jaxon Wright.
 //  Copyright © 2017 KJAX. All rights reserved.
 //
 
