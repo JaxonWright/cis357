@@ -85,6 +85,7 @@ class ViewController: UIViewController {
         latitudeP2.text = nil
         longitudeP1.text = nil
         longitudeP2.text = nil
+        calcButton.isEnabled = false
     }
     
     //Calls this function when the tap is recognized.
