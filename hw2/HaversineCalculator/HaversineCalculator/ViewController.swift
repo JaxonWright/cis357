@@ -10,11 +10,6 @@
 import UIKit
 import CoreLocation
 
-
-// we need to disable the calculate button unless all UITextFields are full
-// http://stackoverflow.com/questions/29448185/how-can-i-disable-a-button-until-text-in-all-uitextfields-has-been-entered-in-sw
-// 
-
 class ViewController: UIViewController {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var bearingLabel: UILabel!
@@ -23,17 +18,34 @@ class ViewController: UIViewController {
     @IBOutlet weak var longitudeP1: UITextField!
     @IBOutlet weak var latitudeP1: UITextField!
     @IBOutlet weak var latitudeP2: UITextField!
+    @IBOutlet weak var calcButton: UIButton!
+    
+    @IBAction func textChanged(_ sender: UITextField) {
+        guard
+            let latP1 = latitudeP1.text, !latP1.isEmpty,
+            let latP2 = latitudeP2.text, !latP2.isEmpty,
+            let lonP1 = longitudeP1.text, !lonP1.isEmpty,
+            let lonP2 = longitudeP2.text, !lonP2.isEmpty
+            else {
+                calcButton.isEnabled = false
+                return
+            }
+        // enable your button if all conditions are met
+        calcButton.isEnabled = true
 
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // make the keyboard disappear when you click outside of the textfield
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
-        
+    
+        calcButton.isEnabled = false
         
         view.addGestureRecognizer(tap)
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -69,10 +81,10 @@ class ViewController: UIViewController {
     func clearAll() {
         distanceLabel.text = "Distance: "
         bearingLabel.text = "Bearing: "
-        latitudeP1.text = ""
-        latitudeP2.text = ""
-        longitudeP1.text = ""
-        longitudeP2.text = ""
+        latitudeP1.text = nil
+        latitudeP2.text = nil
+        longitudeP1.text = nil
+        longitudeP2.text = nil
     }
     
     //Calls this function when the tap is recognized.
