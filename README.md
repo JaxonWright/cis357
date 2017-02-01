@@ -12,3 +12,5 @@ This is a collection of projects for Professor Jonathan Engelsma's Mobile Applic
 A playground to get an introduction to what Swift is like
 ### Homework 2
 A simple iOS app that calculates distance and bearing between two geo locations
+### Homework 3
+A simple Android app that calculates distance and bearing between two geo locations
