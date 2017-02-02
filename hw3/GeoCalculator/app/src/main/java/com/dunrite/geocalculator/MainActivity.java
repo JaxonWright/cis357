@@ -74,9 +74,11 @@ public class MainActivity extends AppCompatActivity {
             p2.setLatitude(Double.parseDouble(latP2.getText().toString()));
 
             String dist = " " + String.format(Locale.ENGLISH, "%.2f", (p1.distanceTo(p2)/1000)) + " kilometers";
+            distanceText.setText(R.string.distance);
             distanceText.append(dist);
 
             String bearing = " " + String.format(Locale.ENGLISH, "%.2f", p1.bearingTo(p2)) + " degrees";
+            bearingText.setText(R.string.bearing);
             bearingText.append(bearing);
         }
     }
