@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dunrite.geocalculator.MainActivity">
+
+    <TextView
+        android:text="@string/position_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelP1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:ems="10"
+        android:id="@+id/latitudeP1"
+        android:layout_below="@id/labelP1"
+        android:hint="@string/latitude"
+        android:selectAllOnFocus="false"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:ems="10"
+        android:id="@+id/longitudeP1"
+        android:hint="@string/longitude"
+        android:layout_below="@+id/latitudeP1" />
+
+    <TextView
+        android:text="@string/position_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelP2"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/longitudeP1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:ems="10"
+        android:id="@+id/latitudeP2"
+        android:hint="@string/latitude"
+        android:layout_below="@id/labelP2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:ems="10"
+        android:id="@+id/longitudeP2"
+        android:hint="@string/longitude"
+        android:layout_below="@id/latitudeP2" />
+
+    <Button
+        android:text="@string/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longitudeP2"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/clearButton"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+        android:text="@string/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longitudeP2"
+        android:id="@+id/calcButton"
+        android:layout_toLeftOf="@id/clearButton"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <TextView
+        android:text="@string/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calcButton"
+        android:id="@+id/distanceText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="@string/bearing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distanceText"
+        android:layout_marginTop="8dp"
+        android:id="@+id/bearingText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+</RelativeLayout>
