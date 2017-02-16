@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4404EEBD1E53CCAB006A490A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4404EEBC1E53CCAB006A490A /* SettingsViewController.swift */; };
+		446ADB711E398DBC005E9772 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446ADB701E398DBC005E9772 /* AppDelegate.swift */; };
+		446ADB731E398DBC005E9772 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446ADB721E398DBC005E9772 /* ViewController.swift */; };
+		446ADB761E398DBC005E9772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB741E398DBC005E9772 /* Main.storyboard */; };
+		446ADB781E398DBC005E9772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB771E398DBC005E9772 /* Assets.xcassets */; };
+		446ADB7B1E398DBC005E9772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB791E398DBC005E9772 /* LaunchScreen.storyboard */; };
+		825CD9861E3D550F002FCFCE /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CD9851E3D550F002FCFCE /* DecimalMinusTextField.swift */; };
+		825CD9881E3D55A9002FCFCE /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4404EEBC1E53CCAB006A490A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		446ADB6D1E398DBC005E9772 /* HaversineCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaversineCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		446ADB701E398DBC005E9772 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		446ADB721E398DBC005E9772 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		446ADB751E398DBC005E9772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		446ADB771E398DBC005E9772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		446ADB7A1E398DBC005E9772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		446ADB7C1E398DBC005E9772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		825CD9851E3D550F002FCFCE /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
+		825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		446ADB6A1E398DBC005E9772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4404EEBF1E53E1BE006A490A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				446ADB721E398DBC005E9772 /* ViewController.swift */,
+				4404EEBC1E53CCAB006A490A /* SettingsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		446ADB641E398DBC005E9772 = {
+			isa = PBXGroup;
+			children = (
+				446ADB6F1E398DBC005E9772 /* HaversineCalculator */,
+				446ADB6E1E398DBC005E9772 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		446ADB6E1E398DBC005E9772 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				446ADB6D1E398DBC005E9772 /* HaversineCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		446ADB6F1E398DBC005E9772 /* HaversineCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				446ADB701E398DBC005E9772 /* AppDelegate.swift */,
+				4404EEBF1E53E1BE006A490A /* Controllers */,
+				446ADB741E398DBC005E9772 /* Main.storyboard */,
+				446ADB771E398DBC005E9772 /* Assets.xcassets */,
+				446ADB791E398DBC005E9772 /* LaunchScreen.storyboard */,
+				446ADB7C1E398DBC005E9772 /* Info.plist */,
+				825CD9851E3D550F002FCFCE /* DecimalMinusTextField.swift */,
+				825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */,
+			);
+			path = HaversineCalculator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		446ADB6C1E398DBC005E9772 /* HaversineCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446ADB7F1E398DBC005E9772 /* Build configuration list for PBXNativeTarget "HaversineCalculator" */;
+			buildPhases = (
+				446ADB691E398DBC005E9772 /* Sources */,
+				446ADB6A1E398DBC005E9772 /* Frameworks */,
+				446ADB6B1E398DBC005E9772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaversineCalculator;
+			productName = HaversineCalculator;
+			productReference = 446ADB6D1E398DBC005E9772 /* HaversineCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		446ADB651E398DBC005E9772 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = KJAX;
+				TargetAttributes = {
+					446ADB6C1E398DBC005E9772 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WV2JD8H6R2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 446ADB681E398DBC005E9772 /* Build configuration list for PBXProject "HaversineCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 446ADB641E398DBC005E9772;
+			productRefGroup = 446ADB6E1E398DBC005E9772 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				446ADB6C1E398DBC005E9772 /* HaversineCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		446ADB6B1E398DBC005E9772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446ADB7B1E398DBC005E9772 /* LaunchScreen.storyboard in Resources */,
+				446ADB781E398DBC005E9772 /* Assets.xcassets in Resources */,
+				446ADB761E398DBC005E9772 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		446ADB691E398DBC005E9772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825CD9861E3D550F002FCFCE /* DecimalMinusTextField.swift in Sources */,
+				825CD9881E3D55A9002FCFCE /* CLLocationExtensions.swift in Sources */,
+				446ADB731E398DBC005E9772 /* ViewController.swift in Sources */,
+				4404EEBD1E53CCAB006A490A /* SettingsViewController.swift in Sources */,
+				446ADB711E398DBC005E9772 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		446ADB741E398DBC005E9772 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446ADB751E398DBC005E9772 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		446ADB791E398DBC005E9772 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446ADB7A1E398DBC005E9772 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		446ADB7D1E398DBC005E9772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		446ADB7E1E398DBC005E9772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		446ADB801E398DBC005E9772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WV2JD8H6R2;
+				INFOPLIST_FILE = HaversineCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cis357.HaversineCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		446ADB811E398DBC005E9772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WV2JD8H6R2;
+				INFOPLIST_FILE = HaversineCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cis357.HaversineCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		446ADB681E398DBC005E9772 /* Build configuration list for PBXProject "HaversineCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446ADB7D1E398DBC005E9772 /* Debug */,
+				446ADB7E1E398DBC005E9772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		446ADB7F1E398DBC005E9772 /* Build configuration list for PBXNativeTarget "HaversineCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446ADB801E398DBC005E9772 /* Debug */,
+				446ADB811E398DBC005E9772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 446ADB651E398DBC005E9772 /* Project object */;
+}
