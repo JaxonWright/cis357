@@ -14,3 +14,7 @@ A playground to get an introduction to what Swift is like
 A simple iOS app that calculates distance and bearing between two geo locations
 ### Homework 3
 A simple Android app that calculates distance and bearing between two geo locations
+### Homework 4
+An extension of Homework 2; introduction of delegate / protocol and segues to implement a settings
+page
+
