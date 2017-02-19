@@ -17,4 +17,7 @@ A simple Android app that calculates distance and bearing between two geo locati
 ### Homework 4
 An extension of Homework 2; introduction of delegate / protocol and segues to implement a settings
 page
+### Homework 5
+An extension of Homework 3; introduction of Intents to implement a settings
+page
 
