@@ -8,4 +8,6 @@
     <string name="calculate">calculate</string>
     <string name="distance">Distance:</string>
     <string name="bearing">Bearing:</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="choose">choose</string>
 </resources>
