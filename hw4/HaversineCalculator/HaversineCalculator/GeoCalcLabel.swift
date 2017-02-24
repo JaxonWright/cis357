@@ -11,7 +11,6 @@ import UIKit
 class GeoCalcLabel: UILabel {
 
     override func awakeFromNib(){
-        super.awakeFromNib()
-        self.textColor = TE
+        self.textColor = FOREGROUND_COLOR
     }
 }

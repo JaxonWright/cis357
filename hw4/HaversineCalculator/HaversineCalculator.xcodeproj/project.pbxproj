@@ -15,6 +15,7 @@
 		446ADB761E398DBC005E9772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB741E398DBC005E9772 /* Main.storyboard */; };
 		446ADB781E398DBC005E9772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB771E398DBC005E9772 /* Assets.xcassets */; };
 		446ADB7B1E398DBC005E9772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB791E398DBC005E9772 /* LaunchScreen.storyboard */; };
+		824EC0841E60B7F500AA23B9 /* GeoCalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824EC0831E60B7F500AA23B9 /* GeoCalcButton.swift */; };
 		825CD9861E3D550F002FCFCE /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CD9851E3D550F002FCFCE /* DecimalMinusTextField.swift */; };
 		825CD9881E3D55A9002FCFCE /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		446ADB771E398DBC005E9772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		446ADB7A1E398DBC005E9772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		446ADB7C1E398DBC005E9772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		824EC0831E60B7F500AA23B9 /* GeoCalcButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCalcButton.swift; sourceTree = "<group>"; };
 		825CD9851E3D550F002FCFCE /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
 		825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */,
 				44486F771E60A62E0021AE2B /* GeoCalcTextField.swift */,
 				44486F791E60A9450021AE2B /* GeoCalcLabel.swift */,
+				824EC0831E60B7F500AA23B9 /* GeoCalcButton.swift */,
 			);
 			path = HaversineCalculator;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824EC0841E60B7F500AA23B9 /* GeoCalcButton.swift in Sources */,
 				825CD9861E3D550F002FCFCE /* DecimalMinusTextField.swift in Sources */,
 				825CD9881E3D55A9002FCFCE /* CLLocationExtensions.swift in Sources */,
 				44486F781E60A62E0021AE2B /* GeoCalcTextField.swift in Sources */,
