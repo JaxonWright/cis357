@@ -46,7 +46,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = BACKGROUND_COLOR
         distanceLabel?.text = "Distance: "
         bearingLabel?.text = "Bearing: "
         // make the keyboard disappear when you click outside of the textfield

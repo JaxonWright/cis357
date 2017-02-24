@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4404EEBD1E53CCAB006A490A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4404EEBC1E53CCAB006A490A /* SettingsViewController.swift */; };
+		44486F781E60A62E0021AE2B /* GeoCalcTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44486F771E60A62E0021AE2B /* GeoCalcTextField.swift */; };
+		44486F7A1E60A9450021AE2B /* GeoCalcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44486F791E60A9450021AE2B /* GeoCalcLabel.swift */; };
 		446ADB711E398DBC005E9772 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446ADB701E398DBC005E9772 /* AppDelegate.swift */; };
 		446ADB731E398DBC005E9772 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446ADB721E398DBC005E9772 /* ViewController.swift */; };
 		446ADB761E398DBC005E9772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446ADB741E398DBC005E9772 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		4404EEBC1E53CCAB006A490A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		44486F771E60A62E0021AE2B /* GeoCalcTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCalcTextField.swift; sourceTree = "<group>"; };
+		44486F791E60A9450021AE2B /* GeoCalcLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCalcLabel.swift; sourceTree = "<group>"; };
 		446ADB6D1E398DBC005E9772 /* HaversineCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaversineCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446ADB701E398DBC005E9772 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		446ADB721E398DBC005E9772 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				446ADB7C1E398DBC005E9772 /* Info.plist */,
 				825CD9851E3D550F002FCFCE /* DecimalMinusTextField.swift */,
 				825CD9871E3D55A9002FCFCE /* CLLocationExtensions.swift */,
+				44486F771E60A62E0021AE2B /* GeoCalcTextField.swift */,
+				44486F791E60A9450021AE2B /* GeoCalcLabel.swift */,
 			);
 			path = HaversineCalculator;
 			sourceTree = "<group>";
@@ -156,8 +162,10 @@
 			files = (
 				825CD9861E3D550F002FCFCE /* DecimalMinusTextField.swift in Sources */,
 				825CD9881E3D55A9002FCFCE /* CLLocationExtensions.swift in Sources */,
+				44486F781E60A62E0021AE2B /* GeoCalcTextField.swift in Sources */,
 				446ADB731E398DBC005E9772 /* ViewController.swift in Sources */,
 				4404EEBD1E53CCAB006A490A /* SettingsViewController.swift in Sources */,
+				44486F7A1E60A9450021AE2B /* GeoCalcLabel.swift in Sources */,
 				446ADB711E398DBC005E9772 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
