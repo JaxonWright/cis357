@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.view.MenuItem;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -28,6 +28,17 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
         ButterKnife.bind(this);
 
+        Intent i = getIntent();
+        if (i.hasExtra("distance") && i.getStringExtra("distance").equals("Miles"))
+            distanceGroup.check(R.id.radioMI);
+        else
+            distanceGroup.check(R.id.radioKM);
+
+        if(i.hasExtra("bearing") && i.getStringExtra("bearing").equals("Mils"))
+            bearingGroup.check(R.id.radioMil);
+        else
+            bearingGroup.check(R.id.radioDeg);
+
         fab.setOnClickListener(v -> {
             Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
 
@@ -40,26 +51,27 @@ public class SettingsActivity extends AppCompatActivity {
                 intent.putExtra("bearing", "Degrees");
             else
                 intent.putExtra("bearing", "Mils");
-            startActivityForResult(intent, Const.SETTINGS_REQ_CODE);
+            //startActivityForResult(intent, Const.SETTINGS_REQ_CODE);
+            setResult(Const.MAIN_REQ_CODE, intent);
             finish();
         });
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.d("fromMain", "" + requestCode);
-        if (requestCode == Const.MAIN_REQ_CODE) {
-            if (data.getStringExtra("distance").equals("Kilometers"))
-                distanceGroup.check(R.id.radioKM);
-            else
-                distanceGroup.check(R.id.radioMI);
-
-            if(data.getStringExtra("bearing").equals("Degrees"))
-                bearingGroup.check(R.id.radioDeg);
-            else
-                bearingGroup.check(R.id.radioMil);
-        } else {
-            super.onActivityResult(requestCode, resultCode, data);
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return(true);
         }
+
+        return(super.onOptionsItemSelected(item));
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
 }

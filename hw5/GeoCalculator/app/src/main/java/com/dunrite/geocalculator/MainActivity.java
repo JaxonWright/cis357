@@ -6,7 +6,6 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -91,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-            Intent intent = new Intent(this, SettingsActivity.class);
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             if(distanceUnits == DistanceUnits.KILOMETERS)
                 intent.putExtra("distance", "Kilometers");
             else
@@ -101,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             else
                 intent.putExtra("bearing", "Mils");
             startActivityForResult(intent, Const.MAIN_REQ_CODE);
-            finish();
+            //finish();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -177,20 +176,22 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.d("fromSettings", "" + requestCode);
-        if (requestCode == Const.SETTINGS_REQ_CODE) {
-            if (data.getStringExtra("distance").equals("Kilometers"))
-                distanceUnits = DistanceUnits.KILOMETERS;
-            else
-                distanceUnits = DistanceUnits.MILES;
+        //Log.d("fromSettings", "" + requestCode);
+        if(data != null) {
+            if (requestCode == Const.MAIN_REQ_CODE && data.hasExtra("distance") && data.hasExtra("bearing")) {
+                if (data.getStringExtra("distance").equals("Kilometers"))
+                    distanceUnits = DistanceUnits.KILOMETERS;
+                else
+                    distanceUnits = DistanceUnits.MILES;
 
-            if(data.getStringExtra("bearing").equals("Degrees"))
-                bearingUnits = BearingUnits.DEGREES;
-            else
-                bearingUnits = BearingUnits.MILS;
-            calculate();
-        } else {
-            super.onActivityResult(requestCode, resultCode, data);
+                if (data.getStringExtra("bearing").equals("Degrees"))
+                    bearingUnits = BearingUnits.DEGREES;
+                else
+                    bearingUnits = BearingUnits.MILS;
+                calculate();
+            } else {
+                super.onActivityResult(requestCode, resultCode, data);
+            }
         }
     }
 }
