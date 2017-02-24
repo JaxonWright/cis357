@@ -10,4 +10,11 @@
     <string name="bearing">Bearing:</string>
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="choose">choose</string>
+    <string name="settings">Settings</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="miles">Miles</string>
+    <string name="bearing_unit">Bearing Unit</string>
+    <string name="distance_unit">Distance Unit</string>
+    <string name="degrees">Degrees</string>
+    <string name="mils">Mils</string>
 </resources>
