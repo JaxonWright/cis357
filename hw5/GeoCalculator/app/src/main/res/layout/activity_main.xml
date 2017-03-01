@@ -8,14 +8,28 @@
     tools:context="com.dunrite.geocalculator.MainActivity">
 
 
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="195dp"
+        app:layout_constraintGuide_percent="0.5" />
+
     <TextView
         android:text="@string/position_1"
-        android:layout_width="352dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/labelP1"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-        tools:layout_editor_absoluteY="16dp"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.56"
+        android:layout_marginEnd="4dp" />
 
     <EditText
         android:layout_width="0dp"
@@ -26,16 +40,13 @@
         android:hint="@string/latitude"
         android:selectAllOnFocus="false"
         style="@style/Widget.AppCompat.EditText"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/labelP1"
         app:layout_constraintLeft_toLeftOf="@+id/labelP1"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelP1"
+        app:layout_constraintRight_toRightOf="@+id/labelP1" />
 
     <EditText
-        android:layout_width="352dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="numberSigned|numberDecimal"
         android:ems="10"
@@ -52,13 +63,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/labelP2"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/longitudeP1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/longitudeP1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/longitudeP1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="4dp" />
 
     <EditText
         android:layout_width="0dp"
@@ -67,24 +78,23 @@
         android:ems="10"
         android:id="@+id/latitudeP2"
         android:hint="@string/latitude"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="@+id/labelP2"
+        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/labelP2"
-        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/labelP2" />
 
     <EditText
-        android:layout_width="352dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="numberSigned|numberDecimal"
         android:ems="10"
         android:id="@+id/longitudeP2"
         android:hint="@string/longitude"
-        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/latitudeP2"
-        app:layout_constraintLeft_toLeftOf="@+id/latitudeP2"
-        app:layout_constraintRight_toRightOf="@+id/latitudeP2" />
+        app:layout_constraintRight_toRightOf="@+id/latitudeP2"
+        app:layout_constraintLeft_toLeftOf="@+id/labelP2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
         android:text="@string/clear"
@@ -92,10 +102,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/clearButton"
         style="@style/Widget.AppCompat.Button.Borderless"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/longitudeP2"
-        app:layout_constraintTop_toBottomOf="@+id/longitudeP2"/>
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/longitudeP2"
+        app:layout_constraintRight_toRightOf="@+id/labelP2" />
 
     <Button
         android:text="@string/calculate"
@@ -103,21 +112,20 @@
         android:layout_height="wrap_content"
         android:id="@+id/calcButton"
         style="@style/Widget.AppCompat.Button.Borderless"
-        tools:layout_constraintTop_creator="1"
         app:layout_constraintLeft_creator="1"
-        app:layout_constraintTop_toBottomOf="@+id/longitudeP2"
-        app:layout_constraintLeft_toLeftOf="@+id/longitudeP2" />
+        app:layout_constraintLeft_toLeftOf="@+id/longitudeP1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/longitudeP1" />
 
     <TextView
         android:text="@string/distance"
-        android:layout_width="352dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/distanceText"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/labelP1"
         app:layout_constraintTop_toBottomOf="@+id/calcButton"
-        app:layout_constraintLeft_toLeftOf="@+id/calcButton"
-        app:layout_constraintRight_toRightOf="@+id/clearButton" />
+        app:layout_constraintRight_toRightOf="@+id/labelP2" />
 
     <TextView
         android:text="@string/bearing"
@@ -125,11 +133,30 @@
         android:layout_height="wrap_content"
         android:id="@+id/bearingText"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/distanceText"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/distanceText"
-        app:layout_constraintHorizontal_bias="1.0"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/distanceText" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/distanceText"
+        app:layout_constraintRight_toRightOf="@+id/labelP2"
+        app:layout_constraintLeft_toLeftOf="@+id/labelP1"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:text="@string/tired_of_typing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:text="@android:string/search_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp" />
 </android.support.constraint.ConstraintLayout>
