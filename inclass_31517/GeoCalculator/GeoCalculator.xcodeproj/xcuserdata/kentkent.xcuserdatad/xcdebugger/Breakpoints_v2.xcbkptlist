@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeoCalculator/ViewController.swift"
+            timestampString = "511286961.145262"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GeoCalculator.ViewController.entries.setter : Swift.Array&lt;GeoCalculator.LocationLookup&gt;"
+                  moduleName = "GeoCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kentkent/Code/cis357/inclass_31517/GeoCalculator/GeoCalculator/ViewController.swift"
+                  timestampString = "511289254.431363"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GeoCalculator.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; GeoCalculator.ViewController"
+                  moduleName = "GeoCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kentkent/Code/cis357/inclass_31517/GeoCalculator/GeoCalculator/ViewController.swift"
+                  timestampString = "511289254.434912"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "584">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GeoCalculator.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;GeoCalculator.ViewController&gt;"
+                  moduleName = "GeoCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kentkent/Code/cis357/inclass_31517/GeoCalculator/GeoCalculator/ViewController.swift"
+                  timestampString = "511289254.438622"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "457">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeoCalculator/HistoryTableViewController.swift"
+            timestampString = "511289165.458672"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

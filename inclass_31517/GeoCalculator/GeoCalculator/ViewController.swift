@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, HistoryTableViewController{
 
     @IBOutlet weak var p1Lat: DecimalMinusTextField!
     @IBOutlet weak var p1Lng: DecimalMinusTextField!
@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     
     var distanceUnits : String = "Kilometers"
     var bearingUnits : String = "Degrees"
+    var entries : [LocationLookup] = []
+    
+    override func 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +46,7 @@ class ViewController: UIViewController {
         let distance = p1.distance(from: p2)
         let bearing = p1.bearingToPoint(point: p2)
         
+        entries.append(LocationLookup(origLat: p1lt, origLng: p1ln, destLat: p2lt, destLng: p2ln, timestamp: Date()))
         if distanceUnits == "Kilometers" {
             self.distanceLabel.text = "Distance: \((distance / 10.0).rounded() / 100.0) kilometers"
         } else {
@@ -83,6 +87,10 @@ class ViewController: UIViewController {
                 dest.dUnits = self.distanceUnits
                 dest.bUnits = self.bearingUnits
                 dest.delegate = self
+            }
+        } else if segue.identifier == "historySeque" {
+            if let dest = segue.destination.childViewControllers[0] as? HistoryTableViewController {
+                dest.entries = self.entries
             }
         }
     }
