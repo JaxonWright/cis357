@@ -20,6 +20,7 @@ class HistoryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.sortIntoSections(entries: self.entries)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -109,4 +110,71 @@ class HistoryTableViewController: UITableViewController {
         _ = self.navigationController?.popViewController(animated: true)
     }
 
+    var tableViewData: [(sectionHeader: String, entries: [LocationLookup])]? {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    func sortIntoSections(entries: [LocationLookup]) {
+
+        var tmpEntries: Dictionary<String, [LocationLookup]> = [:]
+        var tmpData: [(sectionHeader: String, entries: [LocationLookup])] = []
+
+        // partition into sections
+        for entry in entries {
+            let shortDate = entry.timestamp.short
+            if var bucket = tmpEntries[shortDate] {
+                bucket.append(entry)
+                tmpEntries[shortDate] = bucket
+            } else {
+                tmpEntries[shortDate] = [entry]
+            }
+        }
+
+        // breakout into our preferred array format
+        let keys = tmpEntries.keys
+        for key in keys {
+            if let val = tmpEntries[key] {
+                tmpData.append((sectionHeader: key, entries: val))
+            }
+        }
+        // sort by increasing date.
+        tmpData.sort { (v1, v2) -> Bool in
+            if v1.sectionHeader < v2.sectionHeader {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        self.tableViewData = tmpData
+    }
+
+}
+
+extension Double {
+    /// Rounds the double to decimal places value
+    func roundTo(places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
+}
+extension Date {
+    struct Formatter {
+        static let short: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            return formatter
+        }()
+    }
+    
+    var short: String
+    {
+        return Formatter
+            .short
+            .string(from: self
+        )
+    }
 }
