@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController, HistoryTableViewController{
+class ViewController: UIViewController, HistoryTableViewControllerDelegate{
 
     @IBOutlet weak var p1Lat: DecimalMinusTextField!
     @IBOutlet weak var p1Lng: DecimalMinusTextField!
@@ -23,7 +23,15 @@ class ViewController: UIViewController, HistoryTableViewController{
     var bearingUnits : String = "Degrees"
     var entries : [LocationLookup] = []
     
-    override func 
+
+    func selectEntry(entry: LocationLookup){
+        p1Lat.text = String(entry.origLat)
+        p1Lng.text = String(entry.origLng)
+        p2Lat.text = String(entry.destLat)
+        p2Lng.text = String(entry.destLng)
+        
+        doCalculatations()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,14 +91,15 @@ class ViewController: UIViewController, HistoryTableViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "settingsSegue" {
-            if let dest = segue.destination.childViewControllers[0] as? SettingsViewController {
+            if let dest = segue.destination as? SettingsViewController {
                 dest.dUnits = self.distanceUnits
                 dest.bUnits = self.bearingUnits
                 dest.delegate = self
             }
-        } else if segue.identifier == "historySeque" {
-            if let dest = segue.destination.childViewControllers[0] as? HistoryTableViewController {
+        } else if segue.identifier == "historySegue" {
+            if let dest = segue.destination as? HistoryTableViewController {
                 dest.entries = self.entries
+                dest.historyDelegate = self
             }
         }
     }
