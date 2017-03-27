@@ -41,4 +41,5 @@ dependencies {
     compile 'com.android.support:support-v4:25.3.0'
     testCompile 'junit:junit:4.12'
     compile 'net.danlew:android.joda:2.9.5'
+    compile 'com.truizlop.sectionedrecyclerview:library:1.2.0'
 }
