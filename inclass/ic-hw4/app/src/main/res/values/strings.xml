@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GeoCalculator</string>
+    <string name="title_activity_my_settings">MySettingsActivity</string>
+    <string-array name="distance">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+    <string-array name="bearing">
+        <item>Degrees</item>
+        <item>Mils</item>
+    </string-array>
+</resources>

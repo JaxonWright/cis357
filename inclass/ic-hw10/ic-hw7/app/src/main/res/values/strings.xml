@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GeoCalculator</string>
+    <string name="title_activity_my_settings">MySettingsActivity</string>
+    <string-array name="distance">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+    <string-array name="bearing">
+        <item>Degrees</item>
+        <item>Mils</item>
+    </string-array>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_location_search">LocationSearchActivity</string>
+    <string name="location_start">Start location</string>
+    <string name="location_end">End location</string>
+    <string name="location_information">Location Information</string>
+    <string name="calculation_date">Calculation Date</string>
+</resources>

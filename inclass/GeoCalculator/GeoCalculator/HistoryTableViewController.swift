@@ -13,7 +13,7 @@ protocol HistoryTableViewControllerDelegate {
     func selectEntry(entry: LocationLookup)
 }
 
-class HistoryTableViewController: UITableViewController {
+class HistoryTableViewController: UITableViewController{
 
     var entries: [LocationLookup] = []
     var historyDelegate: HistoryTableViewControllerDelegate?
@@ -35,26 +35,61 @@ class HistoryTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        if let data = self.tableViewData {
+            return data.count
+        } else {
+            return 0
+        }
     }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return entries.count
+        // #warning Incomplete implementation, return the number of rows
+        if let sectionInfo = self.tableViewData?[section] {
+            return sectionInfo.entries.count
+        } else {
+            return 0
+        }
     }
-
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
-
-        let entry = self.entries[indexPath.row]
-        cell.textLabel?.text = "( \(entry.origLat), \(entry.origLng)) (\(entry.destLat), \(entry.destLng))"
-        cell.detailTextLabel?.text = entry.timestamp.description
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FancyCell", for: indexPath) as! HistoryTableViewCell
+        
+        //let ll = entries[indexPath.row]
+        if let ll = self.tableViewData?[indexPath.section].entries[indexPath.row] { cell.origPoint.text =
+            "(\(ll.origLat.roundTo(places:4)),\(ll.origLng.roundTo(places:4)))"
+            cell.destPoint.text = "(\(ll.destLat.roundTo(places:4)),\(ll.destLng.roundTo(places: 4)))"
+            cell.timeStamp.text = ll.timestamp.description
+        }
         return cell
     }
-
+    
+    // MARK: - UITableViewDelegate
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+            return self.tableViewData?[section].sectionHeader
+    }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 200.0
+    }
+    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = THEME_COLOR2
+        header.contentView.backgroundColor = THEME_COLOR3
+    }
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView,forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = THEME_COLOR2
+        header.contentView.backgroundColor = THEME_COLOR3
+}
+override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    // use the historyDelegate to report back entry selected to the calculator scene
+    if let del = self.historyDelegate {
+        if let ll = self.tableViewData?[indexPath.section].entries[indexPath.row] {
+            del.selectEntry(entry: ll)
+        }
+    }
+    // this pops to the calculator
+    _ = self.navigationController?.popViewController(animated: true) }
 
     /*
     // Override to support conditional editing of the table view.
@@ -100,15 +135,6 @@ class HistoryTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // use the historyDelegate to report back entry selected to the calculator scene
-        if let del = self.historyDelegate {
-            let ll = entries[indexPath.row]
-            del.selectEntry(entry: ll)
-        }
-        // this pops to the calculator
-        _ = self.navigationController?.popViewController(animated: true)
-    }
 
     var tableViewData: [(sectionHeader: String, entries: [LocationLookup])]? {
         didSet {
@@ -156,11 +182,12 @@ class HistoryTableViewController: UITableViewController {
 
 extension Double {
     /// Rounds the double to decimal places value
-    func roundTo(places:Int) -> Double {
+    func roundTo(places: Int) -> Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded() / divisor
     }
 }
+
 extension Date {
     struct Formatter {
         static let short: DateFormatter = {
@@ -169,12 +196,12 @@ extension Date {
             return formatter
         }()
     }
-    
+
     var short: String
     {
         return Formatter
             .short
             .string(from: self
-        )
+            )
     }
 }

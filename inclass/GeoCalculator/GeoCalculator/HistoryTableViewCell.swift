@@ -10,6 +10,10 @@ import UIKit
 
 class HistoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var origPoint: UILabel!
+    @IBOutlet weak var destPoint: UILabel!
+    @IBOutlet weak var timeStamp: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
