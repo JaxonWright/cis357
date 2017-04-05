@@ -8,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -30,12 +31,9 @@ public class LocationSearchActivity extends AppCompatActivity implements DatePic
 
     int PLACE_AUTOCOMPLETE_REQUEST_CODE = 1;
 
-    @BindView(R.id.locationStart)
-    EditText locationStart;
-    @BindView(R.id.locationEnd)
-    EditText locationEnd;
-    @BindView(R.id.tripDate)
-    EditText tripDateText;
+    @BindView(R.id.locationStart) EditText locationStart;
+    @BindView(R.id.locationEnd) EditText locationEnd;
+    @BindView(R.id.tripDate) EditText tripDateText;
 
     private DateTime tripDate;
     private DatePickerDialog dpDialog;
@@ -80,6 +78,7 @@ public class LocationSearchActivity extends AppCompatActivity implements DatePic
     @OnClick(R.id.locationEnd)
     public void locationEndPressed(){
         try {
+            Log.d(TAG, "locationEndPressed: ");
             Intent intent =
                     new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_FULLSCREEN)
                             .build(this);
