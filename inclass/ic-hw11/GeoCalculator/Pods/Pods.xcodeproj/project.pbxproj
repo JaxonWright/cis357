@@ -1,0 +1,1509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02F07D843F3B3151880D1E67205C11A0 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EED8E4628B8A623E5D1BE5B3692C89 /* Core.swift */; };
+		04A9A536DFAF3C5EC723F92EED127215 /* SegmentedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F652FCFC1F675212AC37F147DC42B4B2 /* SegmentedRow.swift */; };
+		0B2FCAF300C1B74DA6343E48B7D5F3F6 /* PickerInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9CFA71F400AFCE9B2F6931DD56EF3 /* PickerInlineRow.swift */; };
+		0C19B0ADBDDF9D1F35443473DD32F58C /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969AEAE299E2085A08DED285542DD82 /* Form.swift */; };
+		0F47F6ABDFD61B71965C06B833435E53 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080FD3F95E18F50A2A728570E9F1582E /* Protocols.swift */; };
+		144A795542A55FCA27F839FD8B3848AD /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4CF6BC03687F379F990602FFABDBC /* CellType.swift */; };
+		17048D78835182A0B4E9D7926DA75DAD /* PopoverSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A89669D83306B39534334B567D03653 /* PopoverSelectorRow.swift */; };
+		1772EAFC71C30BD931A9585212CA03AC /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB0412F0F7946F5F5494DDB9A56235 /* Row.swift */; };
+		17A3FB1B471D1C1A61BCFBBF5831D845 /* RowControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D5C432E03B6011942270BF0D7924FD /* RowControllerType.swift */; };
+		1ACA00A9EC125081B88B9228462431B8 /* ButtonRowWithPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84B0D5A8F95EA501E3D9CFDC806B2A /* ButtonRowWithPresent.swift */; };
+		1C5B941F79B39828B27EAAD3C9AF7B4B /* PickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC795DDCFBC9E9B6281F397D7DE83E1E /* PickerRow.swift */; };
+		1D4CD70DC32B037FCD6320FE079695D5 /* CheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8328B59664BA94E6612972E264FBAF5 /* CheckRow.swift */; };
+		1EEFBE2820F6BEAC9BAD184673293C9E /* NavigationAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E3B8018023966DFAF2B1AD0F94B44 /* NavigationAccessoryView.swift */; };
+		1F278E8B7F78C2771C856E6E89855D6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		2189F5569BACCE66FD41F5E58FF351B8 /* DateInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B5BCD84293DB0A072580095AE71390 /* DateInlineRow.swift */; };
+		23E6887F5ADC8D4917BC12B079864E1D /* FieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C40F3057219179126541A3540D71C /* FieldRow.swift */; };
+		25A70264F9301E7603D9883777DE8050 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627CF8D7F5F063A37B370C5E1C11AC /* SelectorViewController.swift */; };
+		260A6263A4B8504601674415FB762CBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		265A3BCF8B426717E8EE1CAD4341F99A /* DateFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639B4D2A1759E2DC3FA02264CE24974 /* DateFieldRow.swift */; };
+		28500C67AF0CB1EB34B53FFA93C3D27F /* ListCheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC8DCF4DC725BDDB7A07C6B90259E5 /* ListCheckRow.swift */; };
+		29C686276878C1F5B9C8CB97376A78A1 /* Pods-GeoCalculatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D3BF22AB369DD872ABBED41B7BF844 /* Pods-GeoCalculatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29DBA0C923DE13772022DB52DBAF3CEE /* PushRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85114F6375F132A81A9CC7F5F996A569 /* PushRow.swift */; };
+		2A179EA67ECDDBB23F30CF0B0A71A617 /* ActionSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F5BE9E9822DB141F5F548149B8C2F /* ActionSheetRow.swift */; };
+		2A9169530452DE44B56D99E403EB246A /* Pods-GeoCalculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AFD2F9273813A74F5B9A68E8B1461E /* Pods-GeoCalculator-dummy.m */; };
+		2EA5A84A3D09E8D116D247E3420E7812 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		2F73A899F8F8DA9FFA99D3BBC709D585 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		306BD477167820D6CDECDCE1D7445ECD /* SliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646C48574115576E384860F6AB4306A /* SliderRow.swift */; };
+		3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		3E89604392C5EBDC5E27937AA57C5AC0 /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E3057270CEFF822D883F070CD1C25C /* SwitchRow.swift */; };
+		3F0D960DBEF20736A7A505A9250942F1 /* Eureka-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80165C5B592EF292E5048D2826E67D8D /* Eureka-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EA524A2BD2D970745B89DAADDF7719E /* PresenterRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA331A9AF63788D5B82B281548C47F90 /* PresenterRowType.swift */; };
+		51F62349D05FCB3B6E1E8AD406DEEFE7 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8B4EC872322D148B539EAC9D4EEFB /* Section.swift */; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 478F3668D3D6B2105CA7A70F796216D7 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57F029A6EAD66812E9B0C1319AFE527B /* LabelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5BCDFEC89412996ED3BC289E3C2C7 /* LabelRow.swift */; };
+		59947C008333007F823B0922EE87F96B /* MultipleSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B021880177CEA105464967CF76C6AD /* MultipleSelectorViewController.swift */; };
+		5A380E0127635057397F45AFBD13B255 /* Eureka-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8263745F57AE30AAD754A18959A1B8F /* Eureka-dummy.m */; };
+		5D647533060C688C633E15C86553B868 /* DatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BED6D64CFBB096B132D1B23824EC0 /* DatePickerRow.swift */; };
+		654744F1D8E5A8DB4711E81DC6CC99C3 /* AlertRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435AA3234149E72726F28619FE97FB21 /* AlertRow.swift */; };
+		6F9F25DE63532C8DE5077822E6316111 /* DateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D48B5ACD6DBAAAB4CC56C006FC49D /* DateRow.swift */; };
+		76110C1B9D1144D99D2C179DC74121DD /* MultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41241131C43CB8CC9A1396958894D5FA /* MultipleSelectorRow.swift */; };
+		7B19019174C42D7D481C1B120272443B /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A47FAB952551CE9A7ACBEBBCE762776 /* Operators.swift */; };
+		7CE512D69EDD58D7DDD7B66BE6592EED /* DateInlineFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E64EE27CBB62CEF0568BD7BA370BA /* DateInlineFieldRow.swift */; };
+		7D4103D396B2519600255CA676DE1D62 /* BaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5080BAA7570C9D4EA464F98F5308B26 /* BaseRow.swift */; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5881CE54E463E836A38C3F613FD89AA /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		827BD4C80F28C2F7E9521461DA5CBDAE /* RuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032B9A1F6BD2152519386CB198AEAC2 /* RuleURL.swift */; };
+		987A9AA62B48BC871C21106E68F9257E /* RuleEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789132CA38E2A412E59892129298155 /* RuleEmail.swift */; };
+		9926EF73DC7EFCBD50D322671328B24F /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFE08F777B5994032C41FEA7C76C06 /* Cell.swift */; };
+		99BC63A28EB55DCDC2CA8EAC1886E077 /* StepperRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA7F4524CB557BDF149E387861DBD0 /* StepperRow.swift */; };
+		9CD46DF12CFA5C561B75EF20B95EECD0 /* PickerInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B32939D8DF935A185370B73DA48E /* PickerInputRow.swift */; };
+		A0E6C2F2A364C6349BD2B79F520A8958 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7429764AA5FA5C1C6C82D3B3A5BAA /* Helpers.swift */; };
+		A38A545D1ADAFAB39F6A28B499D9AAB9 /* GenericMultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E355CEC2AE2096DA88C4EF95FA8A0C5 /* GenericMultipleSelectorRow.swift */; };
+		A5B27A12053041F38D47538E48678881 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483DCA4AD7A52D028AB292AF5F7C0DF /* Validation.swift */; };
+		A62AA6ABCFC29683644A2EB79EACB218 /* Pods-GeoCalculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70C47C278B7FB41C9A009B1BCB7C176E /* Pods-GeoCalculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA0CDD726F8156D06FDFE3C6FAB27C52 /* ButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEA382DD739E6CF3D258EB1488C865 /* ButtonRow.swift */; };
+		AA7012D4A2E0818B5D6C2BAA5DFA3CD2 /* RuleEqualsToRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619E6E155719FE245956BCF1E7E60604 /* RuleEqualsToRow.swift */; };
+		B2F5752C97FA6A3C3CB07CBBC2E4E6F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		B3B5B10201D9BA6470173163A6F6725E /* SelectorAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAC9BE7637A73BD7663187B113C0B3C /* SelectorAlertController.swift */; };
+		B5BA32808AFF5DC9C2723CD85931B9DB /* TextAreaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E5D893E16FF0A59AAD194B8F2BB84C /* TextAreaRow.swift */; };
+		BB04DAD5C6DCAE93C15FED1090520610 /* RuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AE3DCC1E30E9B20668635FE2F5ABEF /* RuleRequired.swift */; };
+		BD6FEBF93A8FB23057B38BC52342AF19 /* Eureka.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC05FAA6B4FC290D812289D6C8D4AA2D /* Eureka.bundle */; };
+		BFE53EDC99E6B10F19E85ECBD01FB33E /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A373667D19931293E66B0A301E3EDA /* RowType.swift */; };
+		C657B4C0DFB6C3BE1119C1BB8CAD4C78 /* RuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7351CFF15D709A3F97327EABCDF9D12 /* RuleLength.swift */; };
+		CCAB89C5B0F52B0F69DBED084DDFCFBB /* OptionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC1186FF6204875FDCDFD376A51B7 /* OptionsRow.swift */; };
+		D59D5A854174BE3AEEABB6F346092D93 /* Pods-GeoCalculatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F525A662262407FEBA07CC3FF59F1EC /* Pods-GeoCalculatorTests-dummy.m */; };
+		D9284875BF00A2033E41A8252CE907A5 /* SelectableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B3AE37B19EE4C31A86B15B3EE78EBD /* SelectableSection.swift */; };
+		D994FDEB2110447D7FA1AC10FC028F62 /* Pods-GeoCalculatorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6FA5600FA8DE68605766F9E3F076CC /* Pods-GeoCalculatorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB5214501DA0045F69B3F336F0AB11E8 /* SelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B164F71198AF4F7DC01BBE33F8EE64 /* SelectorRow.swift */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D80CF81B0E2362B5A4015C5319C0389 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE6DF70A452BF20CB858BA7072AAE3EA /* RowProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3980168DAB470EA1B91220244B4A22 /* RowProtocols.swift */; };
+		E0946CE4B110F2A64041FAB63546FB48 /* RuleRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E5480117D55E73CEF6FB9BB9CD209 /* RuleRange.swift */; };
+		E490A481C69CE189A0814626B1251FB4 /* RuleClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B9BE88B0C8B3B864AE0BFC7F6127F /* RuleClosure.swift */; };
+		E585A7898FC181529FD2704BEF4CE992 /* DecimalFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F25A81506BE7CCCBC2A4838682FE3B /* DecimalFormatter.swift */; };
+		E92B5113A74D07D38C8137460AE0E3C7 /* RuleRegExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E31876DC481BD41E1B30434B45737B /* RuleRegExp.swift */; };
+		F1681F8D16AD91A13187576F524783A8 /* HeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DFA393AE8402C6AD153A0528083AAE /* HeaderFooterView.swift */; };
+		F2095372A5BB341F1B5469F634EA6687 /* FieldsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8BB8A7F690D605C2B95F2EA6E3FEF /* FieldsRow.swift */; };
+		F600E7743D1DBBBE89DA5D3636A5F2FF /* Pods-GeoCalculatorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC5462EAB89DADBA4315B4CFB29197 /* Pods-GeoCalculatorUITests-dummy.m */; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 658683010D0181BBB3E9521978BEC723 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E001387FEFF07C1A2ECFC194619CF209 /* GoogleToolboxForMac-dummy.m */; };
+		FC505268B5A20F0F00D3BC0A9FF66F99 /* SelectableRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DFD345351B475338D90359DAC3F29 /* SelectableRowType.swift */; };
+		FF0168C08BB3555924897006B4AD36DA /* InlineRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963EC5B465F08397A3969E5FB29F4141 /* InlineRowType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C7C34EF6475F59ED498BE31BE266E4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		5E066A0852C093F08FE88ED822ED01DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 675A114988AE198732ED4AD726408964;
+			remoteInfo = Eureka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0032B9A1F6BD2152519386CB198AEAC2 /* RuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleURL.swift; path = Source/Validations/RuleURL.swift; sourceTree = "<group>"; };
+		011DDCB6DF7EFA5E8E802FB8E560EA1F /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		014B9BE88B0C8B3B864AE0BFC7F6127F /* RuleClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleClosure.swift; path = Source/Validations/RuleClosure.swift; sourceTree = "<group>"; };
+		02B164F71198AF4F7DC01BBE33F8EE64 /* SelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorRow.swift; path = Source/Rows/Common/SelectorRow.swift; sourceTree = "<group>"; };
+		0394B19973AB7E05834573521C1D565C /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		064E5480117D55E73CEF6FB9BB9CD209 /* RuleRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRange.swift; path = Source/Validations/RuleRange.swift; sourceTree = "<group>"; };
+		080FD3F95E18F50A2A728570E9F1582E /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Rows/Common/Protocols.swift; sourceTree = "<group>"; };
+		0D1381E4338632F1D5B825F028501733 /* Eureka.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Eureka.xcconfig; sourceTree = "<group>"; };
+		0E9B190E8477C9518D1B91EEA310289E /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		124E3FFEB39F1CB09B1CA65232DECBCA /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		130A09908DC93ECC86FDC53277836926 /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Eureka.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DFA393AE8402C6AD153A0528083AAE /* HeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderFooterView.swift; path = Source/Core/HeaderFooterView.swift; sourceTree = "<group>"; };
+		15EED8E4628B8A623E5D1BE5B3692C89 /* Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Core.swift; path = Source/Core/Core.swift; sourceTree = "<group>"; };
+		15FD917A14349341285CDCF2835EC792 /* Pods-GeoCalculatorUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoCalculatorUITests-resources.sh"; sourceTree = "<group>"; };
+		1780A72091750CEE7013329220D9E968 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		1E355CEC2AE2096DA88C4EF95FA8A0C5 /* GenericMultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericMultipleSelectorRow.swift; path = Source/Rows/Common/GenericMultipleSelectorRow.swift; sourceTree = "<group>"; };
+		24EA5F0FEAFAFCFC03C932DEF7F78E98 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		288F26B3F8225863672A7EF27431C4D5 /* Pods-GeoCalculatorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoCalculatorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		290A2A50C3ED22A5D62EA63E9DDA4673 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		297ECBDEE0CB527ABFF0C5CC01A8ED90 /* Pods_GeoCalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeoCalculatorUITests.framework; path = "Pods-GeoCalculatorUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3516DD034BC55F64F8DD4467A0449078 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F9CFA71F400AFCE9B2F6931DD56EF3 /* PickerInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInlineRow.swift; path = Source/Rows/PickerInlineRow.swift; sourceTree = "<group>"; };
+		378C40F3057219179126541A3540D71C /* FieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldRow.swift; path = Source/Rows/Common/FieldRow.swift; sourceTree = "<group>"; };
+		392E64EE27CBB62CEF0568BD7BA370BA /* DateInlineFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineFieldRow.swift; path = Source/Rows/Common/DateInlineFieldRow.swift; sourceTree = "<group>"; };
+		39FFE08F777B5994032C41FEA7C76C06 /* Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Source/Core/Cell.swift; sourceTree = "<group>"; };
+		3B0E3DD1A97BBF0913DAF7015A761846 /* Pods-GeoCalculatorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GeoCalculatorUITests.modulemap"; sourceTree = "<group>"; };
+		41241131C43CB8CC9A1396958894D5FA /* MultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorRow.swift; path = Source/Rows/MultipleSelectorRow.swift; sourceTree = "<group>"; };
+		42D3BF22AB369DD872ABBED41B7BF844 /* Pods-GeoCalculatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeoCalculatorTests-umbrella.h"; sourceTree = "<group>"; };
+		42D5C432E03B6011942270BF0D7924FD /* RowControllerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowControllerType.swift; path = Source/Core/RowControllerType.swift; sourceTree = "<group>"; };
+		435AA3234149E72726F28619FE97FB21 /* AlertRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertRow.swift; path = Source/Rows/AlertRow.swift; sourceTree = "<group>"; };
+		478F3668D3D6B2105CA7A70F796216D7 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		49F9A3ED7D71CD6B2551491E0EDE7E76 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		4C5F48310376F150D65D1506D370AF3E /* Pods-GeoCalculatorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeoCalculatorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4D80CF81B0E2362B5A4015C5319C0389 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		4E6BBC84091B9E2AD774B7193998AFC0 /* Pods-GeoCalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoCalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		51F8C6FCCCA142A10C60444C3273BC51 /* Eureka-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-prefix.pch"; sourceTree = "<group>"; };
+		52B3AE37B19EE4C31A86B15B3EE78EBD /* SelectableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableSection.swift; path = Source/Core/SelectableSection.swift; sourceTree = "<group>"; };
+		52F25A81506BE7CCCBC2A4838682FE3B /* DecimalFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalFormatter.swift; path = Source/Rows/Common/DecimalFormatter.swift; sourceTree = "<group>"; };
+		57D4A8FB2C2E0FC630C89F0E8845BDAB /* Pods-GeoCalculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeoCalculator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		57E3057270CEFF822D883F070CD1C25C /* SwitchRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchRow.swift; path = Source/Rows/SwitchRow.swift; sourceTree = "<group>"; };
+		59EC006CDC7ACB864A6FCEEAAFEB0680 /* Pods-GeoCalculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoCalculator-resources.sh"; sourceTree = "<group>"; };
+		5A24CE2D19AB647F76A23F5934BCCB3D /* Eureka.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Eureka.modulemap; sourceTree = "<group>"; };
+		5A89669D83306B39534334B567D03653 /* PopoverSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopoverSelectorRow.swift; path = Source/Rows/PopoverSelectorRow.swift; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		619E6E155719FE245956BCF1E7E60604 /* RuleEqualsToRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEqualsToRow.swift; path = Source/Validations/RuleEqualsToRow.swift; sourceTree = "<group>"; };
+		62FB0412F0F7946F5F5494DDB9A56235 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Core/Row.swift; sourceTree = "<group>"; };
+		64392F46A760B119740876FFDE9CA3FF /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Versions/A/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		658683010D0181BBB3E9521978BEC723 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		6A47FAB952551CE9A7ACBEBBCE762776 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Source/Core/Operators.swift; sourceTree = "<group>"; };
+		6D548BD2FEBA2C42557FC1A6889426FE /* Pods-GeoCalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoCalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D84C84C9F537634DAF6B1202C99D0D4 /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
+		6F525A662262407FEBA07CC3FF59F1EC /* Pods-GeoCalculatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeoCalculatorTests-dummy.m"; sourceTree = "<group>"; };
+		6FD909A42EACB70E5AF839B25FCDCF51 /* Pods-GeoCalculatorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoCalculatorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		70C47C278B7FB41C9A009B1BCB7C176E /* Pods-GeoCalculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeoCalculator-umbrella.h"; sourceTree = "<group>"; };
+		70F5BCDFEC89412996ED3BC289E3C2C7 /* LabelRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelRow.swift; path = Source/Rows/LabelRow.swift; sourceTree = "<group>"; };
+		7789132CA38E2A412E59892129298155 /* RuleEmail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEmail.swift; path = Source/Validations/RuleEmail.swift; sourceTree = "<group>"; };
+		77BC9A708D5972B97F3B5A28DB55DE96 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		78B021880177CEA105464967CF76C6AD /* MultipleSelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorViewController.swift; path = Source/Rows/Controllers/MultipleSelectorViewController.swift; sourceTree = "<group>"; };
+		7AE8BB8A7F690D605C2B95F2EA6E3FEF /* FieldsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldsRow.swift; path = Source/Rows/FieldsRow.swift; sourceTree = "<group>"; };
+		7B5DFD345351B475338D90359DAC3F29 /* SelectableRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableRowType.swift; path = Source/Core/SelectableRowType.swift; sourceTree = "<group>"; };
+		7BD4CF6BC03687F379F990602FFABDBC /* CellType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellType.swift; path = Source/Core/CellType.swift; sourceTree = "<group>"; };
+		7C6F98386E3133ECD141FFED48086186 /* Pods-GeoCalculatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoCalculatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		80165C5B592EF292E5048D2826E67D8D /* Eureka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-umbrella.h"; sourceTree = "<group>"; };
+		838E16A8BEB70F34209766C4AFCDAA3E /* Pods-GeoCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		84B1B32939D8DF935A185370B73DA48E /* PickerInputRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInputRow.swift; path = Source/Rows/PickerInputRow.swift; sourceTree = "<group>"; };
+		85114F6375F132A81A9CC7F5F996A569 /* PushRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushRow.swift; path = Source/Rows/PushRow.swift; sourceTree = "<group>"; };
+		86627CF8D7F5F063A37B370C5E1C11AC /* SelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorViewController.swift; path = Source/Rows/Controllers/SelectorViewController.swift; sourceTree = "<group>"; };
+		886E3B8018023966DFAF2B1AD0F94B44 /* NavigationAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationAccessoryView.swift; path = Source/Core/NavigationAccessoryView.swift; sourceTree = "<group>"; };
+		8A0843C6C0D908549097416AFFF39547 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		8B4756461381DA44D71607AA40378914 /* Pods-GeoCalculatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GeoCalculatorTests.modulemap"; sourceTree = "<group>"; };
+		8B6FA5600FA8DE68605766F9E3F076CC /* Pods-GeoCalculatorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeoCalculatorUITests-umbrella.h"; sourceTree = "<group>"; };
+		8F2A84EFE6B921D8A8EE9A88F3BD15B2 /* Pods_GeoCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeoCalculatorTests.framework; path = "Pods-GeoCalculatorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90AE3DCC1E30E9B20668635FE2F5ABEF /* RuleRequired.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRequired.swift; path = Source/Validations/RuleRequired.swift; sourceTree = "<group>"; };
+		931BED6D64CFBB096B132D1B23824EC0 /* DatePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerRow.swift; path = Source/Rows/DatePickerRow.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A7429764AA5FA5C1C6C82D3B3A5BAA /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Core/Helpers.swift; sourceTree = "<group>"; };
+		94B5BCD84293DB0A072580095AE71390 /* DateInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineRow.swift; path = Source/Rows/DateInlineRow.swift; sourceTree = "<group>"; };
+		963EC5B465F08397A3969E5FB29F4141 /* InlineRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InlineRowType.swift; path = Source/Core/InlineRowType.swift; sourceTree = "<group>"; };
+		9878C022577C0D25AE62A708F529FBC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98F76CAF0EC60FE7D296687B047B9331 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F33545E6CA06925827DAF00B39070D9 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		A3AC2FE68F1F4AF2920759C5FE2B4ACF /* Pods-GeoCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		A3E31876DC481BD41E1B30434B45737B /* RuleRegExp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRegExp.swift; path = Source/Validations/RuleRegExp.swift; sourceTree = "<group>"; };
+		A4A373667D19931293E66B0A301E3EDA /* RowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowType.swift; path = Source/Core/RowType.swift; sourceTree = "<group>"; };
+		A4EE631097F9A753CBC383FEE93669BA /* Pods-GeoCalculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoCalculator-acknowledgements.plist"; sourceTree = "<group>"; };
+		A5B7B229D462BBFCA8F4C2B0378E2EA9 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		A6754F51EB119BC4357334A0990EF761 /* Pods-GeoCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A759538912C1CA57EEFCEDAA08FF9078 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		AD2BC1186FF6204875FDCDFD376A51B7 /* OptionsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionsRow.swift; path = Source/Rows/Common/OptionsRow.swift; sourceTree = "<group>"; };
+		AEF33BA1CC3CEC7EEB76849026AB84B9 /* Pods-GeoCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		AF3980168DAB470EA1B91220244B4A22 /* RowProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowProtocols.swift; path = Source/Core/RowProtocols.swift; sourceTree = "<group>"; };
+		AFC0C918507FB7AEBC91679DA184D458 /* Pods-GeoCalculatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeoCalculatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B2FC5462EAB89DADBA4315B4CFB29197 /* Pods-GeoCalculatorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeoCalculatorUITests-dummy.m"; sourceTree = "<group>"; };
+		B483DCA4AD7A52D028AB292AF5F7C0DF /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Core/Validation.swift; sourceTree = "<group>"; };
+		B5511AB5573554B2E2070DC349255C45 /* Pods_GeoCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeoCalculator.framework; path = "Pods-GeoCalculator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B639B4D2A1759E2DC3FA02264CE24974 /* DateFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFieldRow.swift; path = Source/Rows/Common/DateFieldRow.swift; sourceTree = "<group>"; };
+		BC05FAA6B4FC290D812289D6C8D4AA2D /* Eureka.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Eureka.bundle; path = Source/Resources/Eureka.bundle; sourceTree = "<group>"; };
+		BCC1A92EBE9C93636A17E56255C57665 /* Pods-GeoCalculatorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoCalculatorTests-resources.sh"; sourceTree = "<group>"; };
+		BF84B0D5A8F95EA501E3D9CFDC806B2A /* ButtonRowWithPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRowWithPresent.swift; path = Source/Rows/ButtonRowWithPresent.swift; sourceTree = "<group>"; };
+		C7351CFF15D709A3F97327EABCDF9D12 /* RuleLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleLength.swift; path = Source/Validations/RuleLength.swift; sourceTree = "<group>"; };
+		C8328B59664BA94E6612972E264FBAF5 /* CheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckRow.swift; path = Source/Rows/CheckRow.swift; sourceTree = "<group>"; };
+		C9ADDB6F222F02F7096BE9CC1341B46A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA51B0412C5C1185EE771699714B5294 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDDA9C032395A4CDBAE25239C4D0F6D7 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		D2A8B4EC872322D148B539EAC9D4EEFB /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Core/Section.swift; sourceTree = "<group>"; };
+		D2FB648777E5E5FE1D389AD7D70DB194 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5881CE54E463E836A38C3F613FD89AA /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		D7E5D893E16FF0A59AAD194B8F2BB84C /* TextAreaRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAreaRow.swift; path = Source/Rows/TextAreaRow.swift; sourceTree = "<group>"; };
+		D969AEAE299E2085A08DED285542DD82 /* Form.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Form.swift; path = Source/Core/Form.swift; sourceTree = "<group>"; };
+		DA331A9AF63788D5B82B281548C47F90 /* PresenterRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterRowType.swift; path = Source/Core/PresenterRowType.swift; sourceTree = "<group>"; };
+		DAEC8DCF4DC725BDDB7A07C6B90259E5 /* ListCheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListCheckRow.swift; path = Source/Rows/SelectableRows/ListCheckRow.swift; sourceTree = "<group>"; };
+		DC795DDCFBC9E9B6281F397D7DE83E1E /* PickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerRow.swift; path = Source/Rows/PickerRow.swift; sourceTree = "<group>"; };
+		E001387FEFF07C1A2ECFC194619CF209 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		E3FA7F4524CB557BDF149E387861DBD0 /* StepperRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepperRow.swift; path = Source/Rows/StepperRow.swift; sourceTree = "<group>"; };
+		E8263745F57AE30AAD754A18959A1B8F /* Eureka-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Eureka-dummy.m"; sourceTree = "<group>"; };
+		E88E624DF4E16ADF4294CA8F1269FDFD /* Pods-GeoCalculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GeoCalculator.modulemap"; sourceTree = "<group>"; };
+		ED1F5BE9E9822DB141F5F548149B8C2F /* ActionSheetRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetRow.swift; path = Source/Rows/ActionSheetRow.swift; sourceTree = "<group>"; };
+		EDAC9BE7637A73BD7663187B113C0B3C /* SelectorAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorAlertController.swift; path = Source/Rows/Controllers/SelectorAlertController.swift; sourceTree = "<group>"; };
+		EF2D14C50B31609C6EDE3AC5003EB94C /* Pods-GeoCalculator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoCalculator-frameworks.sh"; sourceTree = "<group>"; };
+		F0AFD2F9273813A74F5B9A68E8B1461E /* Pods-GeoCalculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeoCalculator-dummy.m"; sourceTree = "<group>"; };
+		F5080BAA7570C9D4EA464F98F5308B26 /* BaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRow.swift; path = Source/Core/BaseRow.swift; sourceTree = "<group>"; };
+		F646C48574115576E384860F6AB4306A /* SliderRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SliderRow.swift; path = Source/Rows/SliderRow.swift; sourceTree = "<group>"; };
+		F652FCFC1F675212AC37F147DC42B4B2 /* SegmentedRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedRow.swift; path = Source/Rows/SegmentedRow.swift; sourceTree = "<group>"; };
+		F70D48B5ACD6DBAAAB4CC56C006FC49D /* DateRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateRow.swift; path = Source/Rows/DateRow.swift; sourceTree = "<group>"; };
+		F88D1F3C391FDC9204391A246C96ABAB /* Pods-GeoCalculatorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoCalculatorTests-frameworks.sh"; sourceTree = "<group>"; };
+		FCBEA382DD739E6CF3D258EB1488C865 /* ButtonRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRow.swift; path = Source/Rows/ButtonRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07ECE508861CD9F3820959301192AC7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F278E8B7F78C2771C856E6E89855D6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA7013AEBA06325D6E182839824AA0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F5752C97FA6A3C3CB07CBBC2E4E6F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D7CBEB683ABDA5350E288E0B64E8B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA5A84A3D09E8D116D247E3420E7812 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A459D8E0AC5F79ADD60D9F6F4B8F1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F73A899F8F8DA9FFA99D3BBC709D585 /* Foundation.framework in Frameworks */,
+				260A6263A4B8504601674415FB762CBE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E3BC971476FC7B9C6DD2753772FF3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A24CE2D19AB647F76A23F5934BCCB3D /* Eureka.modulemap */,
+				0D1381E4338632F1D5B825F028501733 /* Eureka.xcconfig */,
+				E8263745F57AE30AAD754A18959A1B8F /* Eureka-dummy.m */,
+				51F8C6FCCCA142A10C60444C3273BC51 /* Eureka-prefix.pch */,
+				80165C5B592EF292E5048D2826E67D8D /* Eureka-umbrella.h */,
+				3516DD034BC55F64F8DD4467A0449078 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Eureka";
+			sourceTree = "<group>";
+		};
+		020B56988B5FFE590B05A66B44F6C697 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				549222FC8F3277555F32C7B3E0449020 /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		0E3AB6FCE506AFCF3885492B5BB2F9A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				130A09908DC93ECC86FDC53277836926 /* Eureka.framework */,
+				D2FB648777E5E5FE1D389AD7D70DB194 /* GoogleToolboxForMac.framework */,
+				B5511AB5573554B2E2070DC349255C45 /* Pods_GeoCalculator.framework */,
+				8F2A84EFE6B921D8A8EE9A88F3BD15B2 /* Pods_GeoCalculatorTests.framework */,
+				297ECBDEE0CB527ABFF0C5CC01A8ED90 /* Pods_GeoCalculatorUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13F6927144B14318240A6F10914C7104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A0843C6C0D908549097416AFFF39547 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16064CF93EC5F5CC5FFAB2BAA6EDE3E8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				53A5B87A316586FE5F0B5EA0FAE207EB /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		289F1D660B760C06B7FBB583FD7C3A6B /* Pods-GeoCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				9878C022577C0D25AE62A708F529FBC4 /* Info.plist */,
+				8B4756461381DA44D71607AA40378914 /* Pods-GeoCalculatorTests.modulemap */,
+				AFC0C918507FB7AEBC91679DA184D458 /* Pods-GeoCalculatorTests-acknowledgements.markdown */,
+				7C6F98386E3133ECD141FFED48086186 /* Pods-GeoCalculatorTests-acknowledgements.plist */,
+				6F525A662262407FEBA07CC3FF59F1EC /* Pods-GeoCalculatorTests-dummy.m */,
+				F88D1F3C391FDC9204391A246C96ABAB /* Pods-GeoCalculatorTests-frameworks.sh */,
+				BCC1A92EBE9C93636A17E56255C57665 /* Pods-GeoCalculatorTests-resources.sh */,
+				42D3BF22AB369DD872ABBED41B7BF844 /* Pods-GeoCalculatorTests-umbrella.h */,
+				A6754F51EB119BC4357334A0990EF761 /* Pods-GeoCalculatorTests.debug.xcconfig */,
+				A3AC2FE68F1F4AF2920759C5FE2B4ACF /* Pods-GeoCalculatorTests.release.xcconfig */,
+			);
+			name = "Pods-GeoCalculatorTests";
+			path = "Target Support Files/Pods-GeoCalculatorTests";
+			sourceTree = "<group>";
+		};
+		30275FFE64EB12D7B0969890F5C62A9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC05FAA6B4FC290D812289D6C8D4AA2D /* Eureka.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3A4569EA97283F402BF328C366E72019 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49F9A3ED7D71CD6B2551491E0EDE7E76 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CCEBE62A5AE3C7CA2F08A0125641935 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0606EDD1300503D8C9465E45C6FE4C6 /* Eureka */,
+				F710846637EB20A5E85B7891286E15CB /* Firebase */,
+				9824062266141FE43B8968EAB58FB4FF /* FirebaseAnalytics */,
+				5E49E2F3B66C40CC02DB947F40D74C0C /* FirebaseCore */,
+				C56AE4DBA7969C21DBF20AD043F4F162 /* FirebaseDatabase */,
+				020B56988B5FFE590B05A66B44F6C697 /* FirebaseInstanceID */,
+				7B137991987FAAA9ECCC3535966A8355 /* GoogleMaps */,
+				4F21C83DE7A0517B2C1288EDF6076412 /* GooglePlacePicker */,
+				9B9A412D0329D708F68E655B9943B4F0 /* GooglePlaces */,
+				4A1A2E57608BB239D92A041DFABEB02F /* GoogleToolboxForMac */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43EE76F6A4F4816A3B382C50A918810C /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				9E5542D2AD17FB76E0CD117597440984 /* Frameworks */,
+				A0A4EA70534497750B7AB7444335EEDD /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		4A1A2E57608BB239D92A041DFABEB02F /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				9F2F2AFD6720D34E71B26C0413707784 /* Defines */,
+				A5B4352BA2C9FF0AD26A72F8CA5D9867 /* NSData+zlib */,
+				573A28CEDE5F184511B9F668FC55926E /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		4C625625C828050B838E171A8A5AFF3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F33545E6CA06925827DAF00B39070D9 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F21C83DE7A0517B2C1288EDF6076412 /* GooglePlacePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A8663F2493E3EC75821E84D477117545 /* Frameworks */,
+				E49212ABF65039B1936D8E35269B6EC1 /* Resources */,
+			);
+			name = GooglePlacePicker;
+			path = GooglePlacePicker;
+			sourceTree = "<group>";
+		};
+		53A5B87A316586FE5F0B5EA0FAE207EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290A2A50C3ED22A5D62EA63E9DDA4673 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		549222FC8F3277555F32C7B3E0449020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77BC9A708D5972B97F3B5A28DB55DE96 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		573A28CEDE5F184511B9F668FC55926E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5B7B229D462BBFCA8F4C2B0378E2EA9 /* GoogleToolboxForMac.modulemap */,
+				A759538912C1CA57EEFCEDAA08FF9078 /* GoogleToolboxForMac.xcconfig */,
+				E001387FEFF07C1A2ECFC194619CF209 /* GoogleToolboxForMac-dummy.m */,
+				124E3FFEB39F1CB09B1CA65232DECBCA /* GoogleToolboxForMac-prefix.pch */,
+				D5881CE54E463E836A38C3F613FD89AA /* GoogleToolboxForMac-umbrella.h */,
+				CA51B0412C5C1185EE771699714B5294 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		5E49E2F3B66C40CC02DB947F40D74C0C /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				13F6927144B14318240A6F10914C7104 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		77BDD578716FD3DA2DC442504FFA6105 /* Pods-GeoCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				98F76CAF0EC60FE7D296687B047B9331 /* Info.plist */,
+				E88E624DF4E16ADF4294CA8F1269FDFD /* Pods-GeoCalculator.modulemap */,
+				57D4A8FB2C2E0FC630C89F0E8845BDAB /* Pods-GeoCalculator-acknowledgements.markdown */,
+				A4EE631097F9A753CBC383FEE93669BA /* Pods-GeoCalculator-acknowledgements.plist */,
+				F0AFD2F9273813A74F5B9A68E8B1461E /* Pods-GeoCalculator-dummy.m */,
+				EF2D14C50B31609C6EDE3AC5003EB94C /* Pods-GeoCalculator-frameworks.sh */,
+				59EC006CDC7ACB864A6FCEEAAFEB0680 /* Pods-GeoCalculator-resources.sh */,
+				70C47C278B7FB41C9A009B1BCB7C176E /* Pods-GeoCalculator-umbrella.h */,
+				AEF33BA1CC3CEC7EEB76849026AB84B9 /* Pods-GeoCalculator.debug.xcconfig */,
+				838E16A8BEB70F34209766C4AFCDAA3E /* Pods-GeoCalculator.release.xcconfig */,
+			);
+			name = "Pods-GeoCalculator";
+			path = "Target Support Files/Pods-GeoCalculator";
+			sourceTree = "<group>";
+		};
+		7B137991987FAAA9ECCC3535966A8355 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				16064CF93EC5F5CC5FFAB2BAA6EDE3E8 /* Base */,
+				43EE76F6A4F4816A3B382C50A918810C /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				3CCEBE62A5AE3C7CA2F08A0125641935 /* Pods */,
+				0E3AB6FCE506AFCF3885492B5BB2F9A5 /* Products */,
+				B8D9FE0CD24E4F669850764886ADF156 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8EAEA2BABC5F5642DCE40BDD86EAB7D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E9B190E8477C9518D1B91EEA310289E /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9824062266141FE43B8968EAB58FB4FF /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				3A4569EA97283F402BF328C366E72019 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		9B9A412D0329D708F68E655B9943B4F0 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				4C625625C828050B838E171A8A5AFF3E /* Frameworks */,
+				8EAEA2BABC5F5642DCE40BDD86EAB7D4 /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		9BC5795F2B21E1CB99BBCB2F44B57D4B /* Pods-GeoCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADDB6F222F02F7096BE9CC1341B46A /* Info.plist */,
+				3B0E3DD1A97BBF0913DAF7015A761846 /* Pods-GeoCalculatorUITests.modulemap */,
+				4C5F48310376F150D65D1506D370AF3E /* Pods-GeoCalculatorUITests-acknowledgements.markdown */,
+				288F26B3F8225863672A7EF27431C4D5 /* Pods-GeoCalculatorUITests-acknowledgements.plist */,
+				B2FC5462EAB89DADBA4315B4CFB29197 /* Pods-GeoCalculatorUITests-dummy.m */,
+				6FD909A42EACB70E5AF839B25FCDCF51 /* Pods-GeoCalculatorUITests-frameworks.sh */,
+				15FD917A14349341285CDCF2835EC792 /* Pods-GeoCalculatorUITests-resources.sh */,
+				8B6FA5600FA8DE68605766F9E3F076CC /* Pods-GeoCalculatorUITests-umbrella.h */,
+				4E6BBC84091B9E2AD774B7193998AFC0 /* Pods-GeoCalculatorUITests.debug.xcconfig */,
+				6D548BD2FEBA2C42557FC1A6889426FE /* Pods-GeoCalculatorUITests.release.xcconfig */,
+			);
+			name = "Pods-GeoCalculatorUITests";
+			path = "Target Support Files/Pods-GeoCalculatorUITests";
+			sourceTree = "<group>";
+		};
+		9C2B5832BC5221BC5BE6D240CCDAA3C4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				011DDCB6DF7EFA5E8E802FB8E560EA1F /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9E5542D2AD17FB76E0CD117597440984 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1780A72091750CEE7013329220D9E968 /* GoogleMaps.framework */,
+				CDDA9C032395A4CDBAE25239C4D0F6D7 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F2F2AFD6720D34E71B26C0413707784 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				478F3668D3D6B2105CA7A70F796216D7 /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		A0A4EA70534497750B7AB7444335EEDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0394B19973AB7E05834573521C1D565C /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A5B4352BA2C9FF0AD26A72F8CA5D9867 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				4D80CF81B0E2362B5A4015C5319C0389 /* GTMNSData+zlib.h */,
+				658683010D0181BBB3E9521978BEC723 /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		A8663F2493E3EC75821E84D477117545 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D84C84C9F537634DAF6B1202C99D0D4 /* GooglePlacePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8D9FE0CD24E4F669850764886ADF156 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77BDD578716FD3DA2DC442504FFA6105 /* Pods-GeoCalculator */,
+				289F1D660B760C06B7FBB583FD7C3A6B /* Pods-GeoCalculatorTests */,
+				9BC5795F2B21E1CB99BBCB2F44B57D4B /* Pods-GeoCalculatorUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0606EDD1300503D8C9465E45C6FE4C6 /* Eureka */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F5BE9E9822DB141F5F548149B8C2F /* ActionSheetRow.swift */,
+				435AA3234149E72726F28619FE97FB21 /* AlertRow.swift */,
+				F5080BAA7570C9D4EA464F98F5308B26 /* BaseRow.swift */,
+				FCBEA382DD739E6CF3D258EB1488C865 /* ButtonRow.swift */,
+				BF84B0D5A8F95EA501E3D9CFDC806B2A /* ButtonRowWithPresent.swift */,
+				39FFE08F777B5994032C41FEA7C76C06 /* Cell.swift */,
+				7BD4CF6BC03687F379F990602FFABDBC /* CellType.swift */,
+				C8328B59664BA94E6612972E264FBAF5 /* CheckRow.swift */,
+				15EED8E4628B8A623E5D1BE5B3692C89 /* Core.swift */,
+				B639B4D2A1759E2DC3FA02264CE24974 /* DateFieldRow.swift */,
+				392E64EE27CBB62CEF0568BD7BA370BA /* DateInlineFieldRow.swift */,
+				94B5BCD84293DB0A072580095AE71390 /* DateInlineRow.swift */,
+				931BED6D64CFBB096B132D1B23824EC0 /* DatePickerRow.swift */,
+				F70D48B5ACD6DBAAAB4CC56C006FC49D /* DateRow.swift */,
+				52F25A81506BE7CCCBC2A4838682FE3B /* DecimalFormatter.swift */,
+				378C40F3057219179126541A3540D71C /* FieldRow.swift */,
+				7AE8BB8A7F690D605C2B95F2EA6E3FEF /* FieldsRow.swift */,
+				D969AEAE299E2085A08DED285542DD82 /* Form.swift */,
+				1E355CEC2AE2096DA88C4EF95FA8A0C5 /* GenericMultipleSelectorRow.swift */,
+				14DFA393AE8402C6AD153A0528083AAE /* HeaderFooterView.swift */,
+				93A7429764AA5FA5C1C6C82D3B3A5BAA /* Helpers.swift */,
+				963EC5B465F08397A3969E5FB29F4141 /* InlineRowType.swift */,
+				70F5BCDFEC89412996ED3BC289E3C2C7 /* LabelRow.swift */,
+				DAEC8DCF4DC725BDDB7A07C6B90259E5 /* ListCheckRow.swift */,
+				41241131C43CB8CC9A1396958894D5FA /* MultipleSelectorRow.swift */,
+				78B021880177CEA105464967CF76C6AD /* MultipleSelectorViewController.swift */,
+				886E3B8018023966DFAF2B1AD0F94B44 /* NavigationAccessoryView.swift */,
+				6A47FAB952551CE9A7ACBEBBCE762776 /* Operators.swift */,
+				AD2BC1186FF6204875FDCDFD376A51B7 /* OptionsRow.swift */,
+				36F9CFA71F400AFCE9B2F6931DD56EF3 /* PickerInlineRow.swift */,
+				84B1B32939D8DF935A185370B73DA48E /* PickerInputRow.swift */,
+				DC795DDCFBC9E9B6281F397D7DE83E1E /* PickerRow.swift */,
+				5A89669D83306B39534334B567D03653 /* PopoverSelectorRow.swift */,
+				DA331A9AF63788D5B82B281548C47F90 /* PresenterRowType.swift */,
+				080FD3F95E18F50A2A728570E9F1582E /* Protocols.swift */,
+				85114F6375F132A81A9CC7F5F996A569 /* PushRow.swift */,
+				62FB0412F0F7946F5F5494DDB9A56235 /* Row.swift */,
+				42D5C432E03B6011942270BF0D7924FD /* RowControllerType.swift */,
+				AF3980168DAB470EA1B91220244B4A22 /* RowProtocols.swift */,
+				A4A373667D19931293E66B0A301E3EDA /* RowType.swift */,
+				014B9BE88B0C8B3B864AE0BFC7F6127F /* RuleClosure.swift */,
+				7789132CA38E2A412E59892129298155 /* RuleEmail.swift */,
+				619E6E155719FE245956BCF1E7E60604 /* RuleEqualsToRow.swift */,
+				C7351CFF15D709A3F97327EABCDF9D12 /* RuleLength.swift */,
+				064E5480117D55E73CEF6FB9BB9CD209 /* RuleRange.swift */,
+				A3E31876DC481BD41E1B30434B45737B /* RuleRegExp.swift */,
+				90AE3DCC1E30E9B20668635FE2F5ABEF /* RuleRequired.swift */,
+				0032B9A1F6BD2152519386CB198AEAC2 /* RuleURL.swift */,
+				D2A8B4EC872322D148B539EAC9D4EEFB /* Section.swift */,
+				F652FCFC1F675212AC37F147DC42B4B2 /* SegmentedRow.swift */,
+				7B5DFD345351B475338D90359DAC3F29 /* SelectableRowType.swift */,
+				52B3AE37B19EE4C31A86B15B3EE78EBD /* SelectableSection.swift */,
+				EDAC9BE7637A73BD7663187B113C0B3C /* SelectorAlertController.swift */,
+				02B164F71198AF4F7DC01BBE33F8EE64 /* SelectorRow.swift */,
+				86627CF8D7F5F063A37B370C5E1C11AC /* SelectorViewController.swift */,
+				F646C48574115576E384860F6AB4306A /* SliderRow.swift */,
+				E3FA7F4524CB557BDF149E387861DBD0 /* StepperRow.swift */,
+				57E3057270CEFF822D883F070CD1C25C /* SwitchRow.swift */,
+				D7E5D893E16FF0A59AAD194B8F2BB84C /* TextAreaRow.swift */,
+				B483DCA4AD7A52D028AB292AF5F7C0DF /* Validation.swift */,
+				30275FFE64EB12D7B0969890F5C62A9F /* Resources */,
+				01E3BC971476FC7B9C6DD2753772FF3A /* Support Files */,
+			);
+			name = Eureka;
+			path = Eureka;
+			sourceTree = "<group>";
+		};
+		C56AE4DBA7969C21DBF20AD043F4F162 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				D6C52B5DEE5B0F9D1D43A60BA3C82BD2 /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		D6C52B5DEE5B0F9D1D43A60BA3C82BD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24EA5F0FEAFAFCFC03C932DEF7F78E98 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E49212ABF65039B1936D8E35269B6EC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64392F46A760B119740876FFDE9CA3FF /* GooglePlacePicker.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F710846637EB20A5E85B7891286E15CB /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9C2B5832BC5221BC5BE6D240CCDAA3C4 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CD3B288A296B746BE4A86A56D55E0C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62AA6ABCFC29683644A2EB79EACB218 /* Pods-GeoCalculator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F412B9DD67AD97FE17C6F9513349CCA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0D960DBEF20736A7A505A9250942F1 /* Eureka-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CE27A54B881D318F92482FE8E99AE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D994FDEB2110447D7FA1AC10FC028F62 /* Pods-GeoCalculatorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F5CB7D9A9AF434543B8597925C504C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C686276878C1F5B9C8CB97376A78A1 /* Pods-GeoCalculatorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */,
+				DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */,
+				F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */,
+				FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = D2FB648777E5E5FE1D389AD7D70DB194 /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1E6E351347F2AC645A7CA93FFBED9353 /* Pods-GeoCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 749E2E806C05BA5B5A7430CA61F7E1CB /* Build configuration list for PBXNativeTarget "Pods-GeoCalculatorTests" */;
+			buildPhases = (
+				31D175EC1D63C6A8E6110B3E67C2CC4C /* Sources */,
+				8D7CBEB683ABDA5350E288E0B64E8B90 /* Frameworks */,
+				63F5CB7D9A9AF434543B8597925C504C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GeoCalculatorTests";
+			productName = "Pods-GeoCalculatorTests";
+			productReference = 8F2A84EFE6B921D8A8EE9A88F3BD15B2 /* Pods_GeoCalculatorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		675A114988AE198732ED4AD726408964 /* Eureka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C8E1EFA0C5DC6AD96DBEE0EFA14308 /* Build configuration list for PBXNativeTarget "Eureka" */;
+			buildPhases = (
+				B0652E9682BC86759CB160A39B336F2B /* Sources */,
+				9A459D8E0AC5F79ADD60D9F6F4B8F1CB /* Frameworks */,
+				F0646B43B36FB653DE1592EFD881271F /* Resources */,
+				1F412B9DD67AD97FE17C6F9513349CCA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eureka;
+			productName = Eureka;
+			productReference = 130A09908DC93ECC86FDC53277836926 /* Eureka.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		967FFFF851DE0D4D99C5902EF7F94088 /* Pods-GeoCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1A76931C600DC8F990A0683A380E8CE /* Build configuration list for PBXNativeTarget "Pods-GeoCalculatorUITests" */;
+			buildPhases = (
+				CAF87F69D151EE80C1A50C7FD32F88A0 /* Sources */,
+				2BA7013AEBA06325D6E182839824AA0F /* Frameworks */,
+				52CE27A54B881D318F92482FE8E99AE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GeoCalculatorUITests";
+			productName = "Pods-GeoCalculatorUITests";
+			productReference = 297ECBDEE0CB527ABFF0C5CC01A8ED90 /* Pods_GeoCalculatorUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F290C539E92AD4F083CA1D1DDE0BF39E /* Pods-GeoCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F57A9ECA563DAD15F07DFBC599B8EA7 /* Build configuration list for PBXNativeTarget "Pods-GeoCalculator" */;
+			buildPhases = (
+				E155C1E0294572B2962F51327438B1CD /* Sources */,
+				07ECE508861CD9F3820959301192AC7E /* Frameworks */,
+				1CD3B288A296B746BE4A86A56D55E0C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC125C2DD32957BE1E1F3CB9CB5549F0 /* PBXTargetDependency */,
+				347C458E0AD5FCEFBF6F8B9660B15FAD /* PBXTargetDependency */,
+			);
+			name = "Pods-GeoCalculator";
+			productName = "Pods-GeoCalculator";
+			productReference = B5511AB5573554B2E2070DC349255C45 /* Pods_GeoCalculator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0E3AB6FCE506AFCF3885492B5BB2F9A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				675A114988AE198732ED4AD726408964 /* Eureka */,
+				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
+				F290C539E92AD4F083CA1D1DDE0BF39E /* Pods-GeoCalculator */,
+				1E6E351347F2AC645A7CA93FFBED9353 /* Pods-GeoCalculatorTests */,
+				967FFFF851DE0D4D99C5902EF7F94088 /* Pods-GeoCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0646B43B36FB653DE1592EFD881271F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6FEBF93A8FB23057B38BC52342AF19 /* Eureka.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31D175EC1D63C6A8E6110B3E67C2CC4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59D5A854174BE3AEEABB6F346092D93 /* Pods-GeoCalculatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */,
+				F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0652E9682BC86759CB160A39B336F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A179EA67ECDDBB23F30CF0B0A71A617 /* ActionSheetRow.swift in Sources */,
+				654744F1D8E5A8DB4711E81DC6CC99C3 /* AlertRow.swift in Sources */,
+				7D4103D396B2519600255CA676DE1D62 /* BaseRow.swift in Sources */,
+				AA0CDD726F8156D06FDFE3C6FAB27C52 /* ButtonRow.swift in Sources */,
+				1ACA00A9EC125081B88B9228462431B8 /* ButtonRowWithPresent.swift in Sources */,
+				9926EF73DC7EFCBD50D322671328B24F /* Cell.swift in Sources */,
+				144A795542A55FCA27F839FD8B3848AD /* CellType.swift in Sources */,
+				1D4CD70DC32B037FCD6320FE079695D5 /* CheckRow.swift in Sources */,
+				02F07D843F3B3151880D1E67205C11A0 /* Core.swift in Sources */,
+				265A3BCF8B426717E8EE1CAD4341F99A /* DateFieldRow.swift in Sources */,
+				7CE512D69EDD58D7DDD7B66BE6592EED /* DateInlineFieldRow.swift in Sources */,
+				2189F5569BACCE66FD41F5E58FF351B8 /* DateInlineRow.swift in Sources */,
+				5D647533060C688C633E15C86553B868 /* DatePickerRow.swift in Sources */,
+				6F9F25DE63532C8DE5077822E6316111 /* DateRow.swift in Sources */,
+				E585A7898FC181529FD2704BEF4CE992 /* DecimalFormatter.swift in Sources */,
+				5A380E0127635057397F45AFBD13B255 /* Eureka-dummy.m in Sources */,
+				23E6887F5ADC8D4917BC12B079864E1D /* FieldRow.swift in Sources */,
+				F2095372A5BB341F1B5469F634EA6687 /* FieldsRow.swift in Sources */,
+				0C19B0ADBDDF9D1F35443473DD32F58C /* Form.swift in Sources */,
+				A38A545D1ADAFAB39F6A28B499D9AAB9 /* GenericMultipleSelectorRow.swift in Sources */,
+				F1681F8D16AD91A13187576F524783A8 /* HeaderFooterView.swift in Sources */,
+				A0E6C2F2A364C6349BD2B79F520A8958 /* Helpers.swift in Sources */,
+				FF0168C08BB3555924897006B4AD36DA /* InlineRowType.swift in Sources */,
+				57F029A6EAD66812E9B0C1319AFE527B /* LabelRow.swift in Sources */,
+				28500C67AF0CB1EB34B53FFA93C3D27F /* ListCheckRow.swift in Sources */,
+				76110C1B9D1144D99D2C179DC74121DD /* MultipleSelectorRow.swift in Sources */,
+				59947C008333007F823B0922EE87F96B /* MultipleSelectorViewController.swift in Sources */,
+				1EEFBE2820F6BEAC9BAD184673293C9E /* NavigationAccessoryView.swift in Sources */,
+				7B19019174C42D7D481C1B120272443B /* Operators.swift in Sources */,
+				CCAB89C5B0F52B0F69DBED084DDFCFBB /* OptionsRow.swift in Sources */,
+				0B2FCAF300C1B74DA6343E48B7D5F3F6 /* PickerInlineRow.swift in Sources */,
+				9CD46DF12CFA5C561B75EF20B95EECD0 /* PickerInputRow.swift in Sources */,
+				1C5B941F79B39828B27EAAD3C9AF7B4B /* PickerRow.swift in Sources */,
+				17048D78835182A0B4E9D7926DA75DAD /* PopoverSelectorRow.swift in Sources */,
+				4EA524A2BD2D970745B89DAADDF7719E /* PresenterRowType.swift in Sources */,
+				0F47F6ABDFD61B71965C06B833435E53 /* Protocols.swift in Sources */,
+				29DBA0C923DE13772022DB52DBAF3CEE /* PushRow.swift in Sources */,
+				1772EAFC71C30BD931A9585212CA03AC /* Row.swift in Sources */,
+				17A3FB1B471D1C1A61BCFBBF5831D845 /* RowControllerType.swift in Sources */,
+				DE6DF70A452BF20CB858BA7072AAE3EA /* RowProtocols.swift in Sources */,
+				BFE53EDC99E6B10F19E85ECBD01FB33E /* RowType.swift in Sources */,
+				E490A481C69CE189A0814626B1251FB4 /* RuleClosure.swift in Sources */,
+				987A9AA62B48BC871C21106E68F9257E /* RuleEmail.swift in Sources */,
+				AA7012D4A2E0818B5D6C2BAA5DFA3CD2 /* RuleEqualsToRow.swift in Sources */,
+				C657B4C0DFB6C3BE1119C1BB8CAD4C78 /* RuleLength.swift in Sources */,
+				E0946CE4B110F2A64041FAB63546FB48 /* RuleRange.swift in Sources */,
+				E92B5113A74D07D38C8137460AE0E3C7 /* RuleRegExp.swift in Sources */,
+				BB04DAD5C6DCAE93C15FED1090520610 /* RuleRequired.swift in Sources */,
+				827BD4C80F28C2F7E9521461DA5CBDAE /* RuleURL.swift in Sources */,
+				51F62349D05FCB3B6E1E8AD406DEEFE7 /* Section.swift in Sources */,
+				04A9A536DFAF3C5EC723F92EED127215 /* SegmentedRow.swift in Sources */,
+				FC505268B5A20F0F00D3BC0A9FF66F99 /* SelectableRowType.swift in Sources */,
+				D9284875BF00A2033E41A8252CE907A5 /* SelectableSection.swift in Sources */,
+				B3B5B10201D9BA6470173163A6F6725E /* SelectorAlertController.swift in Sources */,
+				DB5214501DA0045F69B3F336F0AB11E8 /* SelectorRow.swift in Sources */,
+				25A70264F9301E7603D9883777DE8050 /* SelectorViewController.swift in Sources */,
+				306BD477167820D6CDECDCE1D7445ECD /* SliderRow.swift in Sources */,
+				99BC63A28EB55DCDC2CA8EAC1886E077 /* StepperRow.swift in Sources */,
+				3E89604392C5EBDC5E27937AA57C5AC0 /* SwitchRow.swift in Sources */,
+				B5BA32808AFF5DC9C2723CD85931B9DB /* TextAreaRow.swift in Sources */,
+				A5B27A12053041F38D47538E48678881 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF87F69D151EE80C1A50C7FD32F88A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F600E7743D1DBBBE89DA5D3636A5F2FF /* Pods-GeoCalculatorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E155C1E0294572B2962F51327438B1CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9169530452DE44B56D99E403EB246A /* Pods-GeoCalculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		347C458E0AD5FCEFBF6F8B9660B15FAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
+			targetProxy = 1C7C34EF6475F59ED498BE31BE266E4B /* PBXContainerItemProxy */;
+		};
+		EC125C2DD32957BE1E1F3CB9CB5549F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Eureka;
+			target = 675A114988AE198732ED4AD726408964 /* Eureka */;
+			targetProxy = 5E066A0852C093F08FE88ED822ED01DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B3932661F1F6ACD11CF17FCF73B0774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3AC2FE68F1F4AF2920759C5FE2B4ACF /* Pods-GeoCalculatorTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoCalculatorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeoCalculatorTests/Pods-GeoCalculatorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GeoCalculatorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D07BFDB8F7839622F8EDF494384455D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 838E16A8BEB70F34209766C4AFCDAA3E /* Pods-GeoCalculator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeoCalculator/Pods-GeoCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GeoCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5652A239ACC17026A87053C39802DCF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6754F51EB119BC4357334A0990EF761 /* Pods-GeoCalculatorTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoCalculatorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeoCalculatorTests/Pods-GeoCalculatorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GeoCalculatorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57CC9B39347B4523CA90D5680DEC37C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6BBC84091B9E2AD774B7193998AFC0 /* Pods-GeoCalculatorUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoCalculatorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeoCalculatorUITests/Pods-GeoCalculatorUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GeoCalculatorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B736E2F72E724B0A86BF9B011C2B6A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1381E4338632F1D5B825F028501733 /* Eureka.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Eureka/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Eureka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C7B109E77B8C06D7B10D3BACEE0EB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEF33BA1CC3CEC7EEB76849026AB84B9 /* Pods-GeoCalculator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeoCalculator/Pods-GeoCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GeoCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4EFF44FB30498779D7B363BDACF73AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1381E4338632F1D5B825F028501733 /* Eureka.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Eureka/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Eureka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C65223F728818392FA996753C5119390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D548BD2FEBA2C42557FC1A6889426FE /* Pods-GeoCalculatorUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoCalculatorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeoCalculatorUITests/Pods-GeoCalculatorUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GeoCalculatorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D60CD877A708870E2BE96B83BA32F883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A759538912C1CA57EEFCEDAA08FF9078 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F066921CBDBDB5F45795E50FBC5AC972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A759538912C1CA57EEFCEDAA08FF9078 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F57A9ECA563DAD15F07DFBC599B8EA7 /* Build configuration list for PBXNativeTarget "Pods-GeoCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C7B109E77B8C06D7B10D3BACEE0EB43 /* Debug */,
+				3D07BFDB8F7839622F8EDF494384455D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C8E1EFA0C5DC6AD96DBEE0EFA14308 /* Build configuration list for PBXNativeTarget "Eureka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFF44FB30498779D7B363BDACF73AC /* Debug */,
+				5B736E2F72E724B0A86BF9B011C2B6A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		749E2E806C05BA5B5A7430CA61F7E1CB /* Build configuration list for PBXNativeTarget "Pods-GeoCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5652A239ACC17026A87053C39802DCF2 /* Debug */,
+				0B3932661F1F6ACD11CF17FCF73B0774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1A76931C600DC8F990A0683A380E8CE /* Build configuration list for PBXNativeTarget "Pods-GeoCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CC9B39347B4523CA90D5680DEC37C2 /* Debug */,
+				C65223F728818392FA996753C5119390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60CD877A708870E2BE96B83BA32F883 /* Debug */,
+				F066921CBDBDB5F45795E50FBC5AC972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
