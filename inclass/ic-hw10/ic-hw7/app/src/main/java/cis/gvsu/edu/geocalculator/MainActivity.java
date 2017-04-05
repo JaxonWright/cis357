@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static int SETTINGS_RESULT = 1;
     public static int HISTORY_RESULT = 2;
+    public static int SEARCH_RESULT = 3;
 
     private String bearingUnits = "degrees";
     private String distanceUnits = "kilometers";
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 //        Button settingsButton = (Button) this.findViewById(R.id.settings);
 
         Button search = (Button)this.findViewById(R.id.signup);
+
         p1Lat = (EditText) this.findViewById(R.id.p1Lat);
         p1Lng = (EditText) this.findViewById(R.id.p1Lng);
         p2Lat = (EditText) this.findViewById(R.id.p2Lat);
@@ -75,10 +77,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-//        settingsButton.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, MySettingsActivity.class);
-//            startActivityForResult(intent, SETTINGS_RESULT );
-//        });
+        search.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, LocationSearchActivity.class);
+            startActivityForResult(intent, SEARCH_RESULT );
+        });
 
         calcButton.setOnClickListener(v -> {
             updateScreen();
@@ -160,6 +162,8 @@ public class MainActivity extends AppCompatActivity {
             this.p2Lat.setText(vals[2]);
             this.p2Lng.setText(vals[3]);
             this.updateScreen();  // code that updates the calcs.
+        } else if (resultCode == SEARCH_RESULT){
+
         }
     }
 
