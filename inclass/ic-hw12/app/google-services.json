@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "70508635295",
+    "firebase_url": "https://propane-ripsaw-163016.firebaseio.com",
+    "project_id": "propane-ripsaw-163016",
+    "storage_bucket": "propane-ripsaw-163016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70508635295:android:ca382a209ade0f96",
+        "android_client_info": {
+          "package_name": "cis.gvsu.edu.geocalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70508635295-ei8ka47qana9miudco3rucsqfqq9ric8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cis.gvsu.edu.geocalculator",
+            "certificate_hash": "7073c2d483c764e5ac0e06ec6d0b6e11245c780e"
+          }
+        },
+        {
+          "client_id": "70508635295-vaqn4n316jpmor6j5raosm8hgtn6o1q6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqiZa6wfFxiNyU3Juvpo3-_io_B4tr06A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70508635295-u7jnhsjtebigmhqu4spk6cj7so2equg1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "edu.gvsu.cis.GeoCalculator"
+              }
+            },
+            {
+              "client_id": "70508635295-vaqn4n316jpmor6j5raosm8hgtn6o1q6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

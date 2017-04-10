@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="25"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="39006214449095"
+    token="-4472978905898403147"
+    verifier="FIELD_ADDED" >
+
+    <task
+        name="javac"
+        duration="73" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="17" />
+    <task
+        name="verifier"
+        duration="1" />
+
+    <artifact
+        location="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+        type="DEX" />
+
+    <build
+        timestamp="36053001639310"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="37888271513035"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="37938438304175"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="39006214449095"
+        verifier="FIELD_ADDED" >
+        <artifact
+            location="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

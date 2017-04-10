@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Jaxon\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\support-annotations-25.3.0-2ce82f3e57f7969549e2578c1c5e5248767c9d0f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-f9ffa638273186a303bf14f859bcde1335ae0780.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="d20672631818754557255886d3feb43e7fe75a66">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-9403b765a14af96a415e949f647b580d0211b535.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-14ffb54894ee115167732f0bee6205f83ff7be3e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.9.5\31b98a67bed065295ca86fab61e1b7601510a193\joda-time-2.9.5-no-tzdb.jar"
+        revision="25.0.2"
+        sha1="31b98a67bed065295ca86fab61e1b7601510a193">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\joda-time-2.9.5-no-tzdb-607bcf98b017199b7dc7a698309a7e057b854649.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-70f37787661723190762f5229e192ef22d18e80c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-8acb0cf41d5bd1698ecdc47e17a30ed9ce54e79d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-d08cfed5299120e1077ffdd0070d3f4e8a099592.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-8e4abab664eb7663d070ec2f48e1b26354923a05.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\design\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-edf191abe6ab39d562a90337d0cce723d6130f70.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-a5a639b20ed6ee9ae91a4570d549a6adef06520f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-530e1b517e77e71b049643aa8b90cc0d9eaec56a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.truizlop.sectionedrecyclerview\library\1.2.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="8b0231ff1692ac844199e0287d97ee99fb2512b4">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-52ca75e3aaf73c4c692c6c94269770d1bfeea275.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\net.danlew\android.joda\2.9.5\jars\classes.jar"
+        revision="25.0.2"
+        sha1="6c877b2c372dd26a46a0fe1c0fe07f186fb2ac26">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-a34df462d634513fce477c2716029bcb88410e89.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0\constraint-layout-solver-1.0.0.jar"
+        revision="25.0.2"
+        sha1="90493f2ea15ff3f57416368123e5d4d180e0c6fd">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\constraint-layout-solver-1.0.0-d8546d7dc8e3816eba90cdaa80cfc387e3276fef.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-5851b6c29d63005c36d4367b028c3183fd4f0855.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-e3e7e62ea95e405b33b1657170d5a941a98fe60b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.0\jars\classes.jar"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="C:\Users\Jaxon\Desktop\ic-hw7\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-50041702c2fe07d2a49a654fc6a0559ae1e75380.jar" />
+    </item>
+
+</items>
