@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GeoCalculator</string>
+    <string name="title_activity_my_settings">MySettingsActivity</string>
+    <string-array name="distance">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+    <string-array name="bearing">
+        <item>Degrees</item>
+        <item>Mils</item>
+    </string-array>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_location_search">Location Search</string>
+    <string name="trip_info">Location Information</string>
+    <string name="journal_name">Enter Journal Name</string>
+    <string name="start_location">Start Location</string>
+    <string name="end_location">End Location</string>
+    <string name="start_date_hint">Date</string>
+    <string name="end_date_hint">End Date</string>
+    <string name="trip_interval">Calculation Date</string>
+
+</resources>

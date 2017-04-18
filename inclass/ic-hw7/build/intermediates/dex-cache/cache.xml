@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7bbefc39184f0960b24054f559acec3eab21b62e">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e44dae237b0b49b15b46923cc13ce0515f970def/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_68da4cb31a6101d4f2db2807ca8d3f6f22f12fd6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_efcfcedbcb7b0612dadba9cbc19ffe0780d1c7b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_4900a16862a7f5ab1f2a12ddfb0904d827e9c5c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_01c3e8ef9165253eb9d0e3702d93006f604c24ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_9aeb050678f3895578bfcd863f9e712de0a252a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_21363ede9a1e6b1922821d15e145897b42ef6e1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_e127e59afffff03e0eb98654dd511199ef372f4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_f0aa58c529b5d3ee3732d941d871bfe63f0231b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d49907e1612e3c994af9d41701d035b85a16fed3">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a12431190ee7c002952e39bd1f2a5a171db68ce1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_5915c27f36e2c46399d82103063f86741a3da8c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/engeljo/Documents/Courses/CIS357/CIS357-Winter2017/homework/Solutions/hw2/Android/GeoCalculator/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_0d56392b67fd01e7082f7e7187cc7eebc2347ffd/classes.dex" />
+    </item>
+
+</items>
